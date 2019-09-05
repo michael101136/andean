@@ -1,7 +1,13 @@
 @extends('public.es.layouts.master')
 
 @section('content')
-
+   <section style="background-image:url('public/img/header/bg-1.jpg');" class="breadcrumbs">
+        <div class="container">
+          
+            <h2 style="text-align: center;"><span>Contactos</span></h2>
+          </div>
+        </div>
+      </section>
 
 <div class="content-body">
       <div class="container page">
