@@ -108,7 +108,9 @@ Route:: get('/listar_categoria_blog/{categoria?}',
 	'as' => 'listar_categoria_blog'
 ]);
 
+Route::get('/nosotros','PublicController@nosotros');
 
+Route::get('/testimonios','PublicController@testimonios');
 
 // Route::get('/blogPorCategoria','PublicController@blogPorCategoria');
 

@@ -1,6 +1,14 @@
 @extends('public.es.layouts.master')
 
 @section('content')
+
+   <section style="background-image:url('/public/img/header/bg-1.jpg');" class="breadcrumbs">
+        <div class="container">
+          
+            <h2 style="text-align: center;"><span>PAQUETES</span></h2>
+          </div>
+        </div>
+      </section>
 <div class="content-body">
       <div class="container page">
         <div class="row">
@@ -63,22 +71,22 @@
                   <h2 class="widget-title"> CATEGORIAS</h2>
                   <!-- item recent post-->
                   <div class="item-top-sellers clearfix">
-                      <img src="/public/tours/categoria/1.jpg"  onclick="listar_categorias('aventura');" data-at2x="/public/tours/categoria/1.jpg" alt>
+                     
                       <h3 class="title"><a href="javascript:;" onclick="listar_categorias('aventura');">AVENTURA</a></h3>
                   </div>
                   <!-- ! item recent post-->
                   <!-- item recent post-->
-                  <div class="item-top-sellers clearfix"><img src="/public/tours/categoria/2.jpg" onclick="listar_categorias('mistico');" data-at2x="/public/tours/categoria/2.jpg" alt>
+                  <div class="item-top-sellers clearfix">
                     <h3 class="title"><a href="javascript:;" onclick="listar_categorias('mistico');">MÍSTICO</a></h3>
                   </div>
                   <!-- ! item recent post-->
                   <!-- item recent post-->
-                  <div class="item-top-sellers clearfix"><img src="/public/tours/categoria/3.jpg" onclick="listar_categorias('tradicional');" data-at2x="/public/tours/categoria/3.jpg" alt>
+                  <div class="item-top-sellers clearfix">
                     <h3 class="title"><a href="javascript:;" onclick="listar_categorias('tradicional');">TRADICIONAL</a><span style="width:80%"></span></h3>
                   </div>
                   <!-- ! item recent post-->
                   
-                  <div class="item-top-sellers clearfix"><img src="/public/tours/categoria/4.jpg" onclick="listar_categorias('vivencial');" data-at2x="/public/tours/categoria/4.jpg" alt>
+                  <div class="item-top-sellers clearfix">
                     <h3 class="title"><a href="javascript:;" onclick="listar_categorias('vivencial');">VIVENCIAL</a><span style="width:80%"></span></h3>
                   </div>
                 </div>
@@ -99,10 +107,10 @@
               <!-- Recomended Content-->
              
               <div class="recom-item-body"><a href="{{route('detalletour',['tour'=>$item->slug])}}">
-                  <h6 class="blog-title">{{$item->nombretour}}</h6></a>
-                <div class="stars stars-4"></div>
-                <div class="recom-price"><span class="font-4">$90</span> per night</div>
-                <p class="mb-30">{{$item->descripciontour}}</p><a href="{{route('detalletour',['tour'=>$item->slug])}}" class="cws-button small alt">Leer más</a>
+                  <h6 class="blog-title" style="margin-top: 49px;">{{$item->nombretour}}</h6></a>
+             
+                <!-- <p class="mb-30">{{$item->descripciontour}}</p> -->
+                <a href="{{route('detalletour',['tour'=>$item->slug])}}" class="cws-button small alt">Leer más</a>
                 <!--<div class="action font-2">20%</div>-->
               </div>
              

@@ -198,5 +198,14 @@ class PublicController extends Controller
    {
        return view('public.es.contacto.index');
    }
+   public function nosotros()
+   {
+       return view('public.es.nosotros.index');
+   }
+   
+   public function testimonios()
+   {
+       return view('public.es.testimonios.index');
+   }
    
 }
