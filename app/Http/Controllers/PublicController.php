@@ -17,7 +17,7 @@ class PublicController extends Controller
              ->paginate(4);
              
        
-   	return view('public.es.inicio',['data'=>$data]);
+   	return view('assets.pagina.es.inicio',['data'=>$data]);
    	
    }
 

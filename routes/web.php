@@ -16,7 +16,13 @@
 // });
 
 Route::get('/', 'PublicController@index');
-
+/*__________________inicio estañol_________________________________________________________________*/
+Route::get('{lang?}/nosotros/', [ 'uses' => 'PublicController@about' ])->name('nosotrosEs');
+Route::get('{lang?}/testimonio/', [ 'uses' => 'PublicController@testimony' ])->name('testimonioEs');
+Route::get('{lang?}/categoria/{search?}', [ 'uses' => 'PublicController@tours' ])->name('paquetesCategoriaES');
+Route::get('{lang?}/blog/', [ 'uses' => 'PublicController@blog' ])->name('blogEs');
+Route::get('{lang?}/contacto/', [ 'uses' => 'PublicController@contact' ])->name('contactoEs');
+/*__________________fin español_________________________________________________________________*/
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
