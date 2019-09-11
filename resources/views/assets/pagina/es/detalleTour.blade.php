@@ -69,11 +69,11 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <ul class="nav navbar-nav text-center">
-                                <li><a class="page-scroll" href="#overview">Overview</a></li>
-                                <li><a class="page-scroll" href="#experience">Experience</a></li>
-                                <li><a class="page-scroll" href="#activities">Activities</a></li>
-                                <li><a class="page-scroll" href="#accommodation">Accommodation</a></li>
-                                <li><a class="page-scroll" href="#tour-gallery">Gallery</a></li>
+                                <li><a class="page-scroll" href="#overview">Inicio</a></li>
+                                <li><a class="page-scroll" href="#experience">Programa</a></li>
+                                <li><a class="page-scroll" href="#activities">Itinerario</a></li>
+                                <li><a class="page-scroll" href="#accommodation">Extensiones</a></li>
+                                <li><a class="page-scroll" href="#tour-gallery">Fechas</a></li>
                             </ul> <!--end portfolio sorting -->
                         </div>
                     </div>
@@ -87,11 +87,11 @@
                             <div class="col-md-offset-2 col-md-8">
                                 <div class="section-title text-center">
                                     <i class="flaticon-experiment-results"></i>
-                                    <h2>Experience</h2>
+                                    <h2>Detalles del tour</h2>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                                 </div>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-8">
                                 <div class="experience-title">
                                     <h2>Experience</h2>
                                     <h3>Access to free education for everyone</h3>
@@ -122,6 +122,147 @@
                                         passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                 </div>
                             </div>
+
+
+                            <div class="col-sm-4">
+
+                                <div class="cats-title">RESERVA</div>
+                                <div class="booking-form tour_booking">
+                            
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>Adultos</label>
+                                                <div class="input-group number-spinner">
+                                                    <span class="input-group-btn">
+                                                        <a class="btn btn-pm" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
+                                                    </span>
+                                                    <input type="text" class="form-control text-center" name="cantidadAdultos" id="cantidadAdultos" value="0">
+                                                    <span class="input-group-btn">
+                                                        <a class="btn btn-pm" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
+                                                    </span>
+                                                  
+                                                </div>
+                                            </div>
+                                            <input type="hidden" class="form-control" id="idtour" name="idtour"  value="">
+                                            <input type="hidden" class="form-control" id="lenguaje" name="lenguaje"  value="es">
+                                            <div class=" col-sm-6">
+                                                <label>Niños</label>
+                                                <div class="input-group number-spinner">
+                                                    <span class="input-group-btn">
+                                                        <a class="btn btn-pm" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
+                                                    </span>
+                                                    <input type="text" class="form-control text-center" name="cantidadNinios" id="cantidadNinios" value="0">
+                                                    <span class="input-group-btn">
+                                                        <a class="btn btn-pm" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Nombre completo</label>
+                                                    <input type="text" class="form-control" id="name" name="name" value="{{old('name')}}" placeholder="Ingrese su nombre completo">
+                                                    <p style="color:red;"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Email</label>
+                                                    <input type="text" class="form-control" id="email" name="email" value="{{old('email')}}" placeholder="Ingrese su correo electrónico">
+                                                    <p style="color:red;"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Nacionalidad</label>
+                                                    <input type="text" class="form-control" id="country" name="country" value="{{old('country')}}" placeholder="Ingrese su nacionalidad">
+                                                    <p style="color:red;"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Número telefónico</label>
+                                                    <input type="text" class="form-control" id="phone" name="phone" value="{{old('phone')}}" placeholder="Ingrese su número telefónico">
+                                                    <p style="color:red;"></p>
+                                                </div>
+                                            </div>
+                                    
+                                             <div class="col-sm-12">
+                                                
+                                                <div class="form-group">
+                                                    <label>Hotel Cusco</label>
+                                                    <select class="form-control" id="hotel1" name='hotel1'>
+                                                        <option value="NINGUNO">NINGUNO</option>
+                                                        <option value="INKANDINA">INKANDINA</option>
+                                                        <option value="PANAKA">PANAKA</option>
+                                                        <option value="HOSTAL MALLQUI">HOSTAL MALLQUI</option>
+                                                        <option value="REY ANTARES">REY ANTARES</option>
+                                                        <option value="AVELLANEDA">AVELLANEDA</option>
+                                                        
+                                                    </select>
+                                               
+                                                </div>
+                                                
+                                            </div>
+                                             <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Hotel Aguas calientes</label>
+                                                    <select class="form-control" id="hotel2" name='hotel2'>
+                                                        <option value="NINGUNO">NINGUNO</option>
+                                                        <option value="TAYTA HOTEL">TAYTA HOTEL</option>
+                                                        <option value="SOL DE LOS ANDESINN">SOL DE LOS ANDESINN</option>
+                                                        <option value="NEW DAY">NEW DAY</option>
+                                                        
+                                                    </select>
+                                               
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Tipo habitación</label>
+                                                    <select class="form-control" id="tipo_habitacion" name="tipo_habitacion">
+                                                        <option value="NINGUNO">NINGUNO</option>
+                                                        <option value="Simple">Simple</option>
+                                                        <option value="Doble">Doble</option>
+                                                        <option value="Triple">Triple</option>
+                                                        <option value="Cuádruple">Cuádruple</option>
+                                                      
+                                                    </select>
+                                               
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Fecha de viaje</label>
+                                                    <input type="date" class="form-control" id="date" name="date" >
+                                                    <p style="color:red;"></p>
+                                                </div>
+                                            </div>
+                                             
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Descripción</label>
+                                                    <textarea class="form-control" id="message" name="message" cols="40" rows="5" value="{{old('message')}}" placeholder=""></textarea>
+                                                    <p style="color:red;"></p>
+                                                </div>
+                                            </div>
+                                          
+                                        </div><br>
+                                        <button class="thm-btn btn-block">Reservar</button>
+          
+                                        
+                                </div>
+
+                                <div class="middle-content">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img src="assets/images/trip.jpg" class="img-responsive" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                          
+                            </div>
+
                         </div>
                         <div class="separator"></div>
                     </div>
@@ -134,46 +275,174 @@
                             <div class="col-md-offset-2 col-md-8">
                                 <div class="section-title text-center">
                                     <i class="flaticon-arrows"></i>
-                                    <h2>Activities</h2>
+                                    <h2>Itinerarios</h2>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                                 </div>
                             </div>
-                            <div class="col-md-10 col-md-offset-1">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="active-box">
-                                            <i class="flaticon-lodge"></i>
-                                            <h3>Wildlife Viewing</h3>
-                                            <p>Muster you courage and bike down the infamous "Death Road", which passes through 3 different climate
-                                                zones and gives awe inspiring views of the Andes.</p>
-                                        </div>
+
+
+
+
+                             <div class="col-sm-8">
+                                <div class="experience-title">
+                                    <h2>Itinerario</h2>
+                                 <div class="row">
+                                     <div class="col-md-12">
+                                         
+                                     </div>
+
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="active-box">
-                                            <i class="flaticon-bicycle"></i>
-                                            <h3>Mountain biking</h3>
-                                            <p>Muster you courage and bike down the infamous "Death Road", which passes through 3 different climate
-                                                zones and gives awe inspiring views of the Andes.</p>
-                                        </div>
+
+                                </div>
+                                <div class="middle-content">
+                                    <div class="row">
+                                        
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="active-box">
-                                            <i class="flaticon-ship"></i>
-                                            <h3>Boat</h3>
-                                            <p>Muster you courage and bike down the infamous "Death Road", which passes through 3 different climate
-                                                zones and gives awe inspiring views of the Andes.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="active-box">
-                                            <i class="flaticon-ruins"></i>
-                                            <h3>Ancient Ruins</h3>
-                                            <p>Muster you courage and bike down the infamous "Death Road", which passes through 3 different climate
-                                                zones and gives awe inspiring views of the Andes.</p>
+                                </div>
+                              
+                            </div>
+
+
+                            <div class="col-sm-4">
+
+                                <div class="cats-title">RESERVA</div>
+                                <div class="booking-form tour_booking">
+                            
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>Adultos</label>
+                                                <div class="input-group number-spinner">
+                                                    <span class="input-group-btn">
+                                                        <a class="btn btn-pm" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
+                                                    </span>
+                                                    <input type="text" class="form-control text-center" name="cantidadAdultos" id="cantidadAdultos" value="0">
+                                                    <span class="input-group-btn">
+                                                        <a class="btn btn-pm" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
+                                                    </span>
+                                                  
+                                                </div>
+                                            </div>
+                                            <input type="hidden" class="form-control" id="idtour" name="idtour"  value="">
+                                            <input type="hidden" class="form-control" id="lenguaje" name="lenguaje"  value="es">
+                                            <div class=" col-sm-6">
+                                                <label>Niños</label>
+                                                <div class="input-group number-spinner">
+                                                    <span class="input-group-btn">
+                                                        <a class="btn btn-pm" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
+                                                    </span>
+                                                    <input type="text" class="form-control text-center" name="cantidadNinios" id="cantidadNinios" value="0">
+                                                    <span class="input-group-btn">
+                                                        <a class="btn btn-pm" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Nombre completo</label>
+                                                    <input type="text" class="form-control" id="name" name="name" value="{{old('name')}}" placeholder="Ingrese su nombre completo">
+                                                    <p style="color:red;"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Email</label>
+                                                    <input type="text" class="form-control" id="email" name="email" value="{{old('email')}}" placeholder="Ingrese su correo electrónico">
+                                                    <p style="color:red;"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Nacionalidad</label>
+                                                    <input type="text" class="form-control" id="country" name="country" value="{{old('country')}}" placeholder="Ingrese su nacionalidad">
+                                                    <p style="color:red;"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Número telefónico</label>
+                                                    <input type="text" class="form-control" id="phone" name="phone" value="{{old('phone')}}" placeholder="Ingrese su número telefónico">
+                                                    <p style="color:red;"></p>
+                                                </div>
+                                            </div>
+                                    
+                                             <div class="col-sm-12">
+                                                
+                                                <div class="form-group">
+                                                    <label>Hotel Cusco</label>
+                                                    <select class="form-control" id="hotel1" name='hotel1'>
+                                                        <option value="NINGUNO">NINGUNO</option>
+                                                        <option value="INKANDINA">INKANDINA</option>
+                                                        <option value="PANAKA">PANAKA</option>
+                                                        <option value="HOSTAL MALLQUI">HOSTAL MALLQUI</option>
+                                                        <option value="REY ANTARES">REY ANTARES</option>
+                                                        <option value="AVELLANEDA">AVELLANEDA</option>
+                                                        
+                                                    </select>
+                                               
+                                                </div>
+                                                
+                                            </div>
+                                             <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Hotel Aguas calientes</label>
+                                                    <select class="form-control" id="hotel2" name='hotel2'>
+                                                        <option value="NINGUNO">NINGUNO</option>
+                                                        <option value="TAYTA HOTEL">TAYTA HOTEL</option>
+                                                        <option value="SOL DE LOS ANDESINN">SOL DE LOS ANDESINN</option>
+                                                        <option value="NEW DAY">NEW DAY</option>
+                                                        
+                                                    </select>
+                                               
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Tipo habitación</label>
+                                                    <select class="form-control" id="tipo_habitacion" name="tipo_habitacion">
+                                                        <option value="NINGUNO">NINGUNO</option>
+                                                        <option value="Simple">Simple</option>
+                                                        <option value="Doble">Doble</option>
+                                                        <option value="Triple">Triple</option>
+                                                        <option value="Cuádruple">Cuádruple</option>
+                                                      
+                                                    </select>
+                                               
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Fecha de viaje</label>
+                                                    <input type="date" class="form-control" id="date" name="date" >
+                                                    <p style="color:red;"></p>
+                                                </div>
+                                            </div>
+                                             
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Descripción</label>
+                                                    <textarea class="form-control" id="message" name="message" cols="40" rows="5" value="{{old('message')}}" placeholder=""></textarea>
+                                                    <p style="color:red;"></p>
+                                                </div>
+                                            </div>
+                                          
+                                        </div><br>
+                                        <button class="thm-btn btn-block">Reservar</button>
+          
+                                        
+                                </div>
+                            
+                                <div class="middle-content">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img src="assets/images/trip.jpg" class="img-responsive" alt="">
                                         </div>
                                     </div>
                                 </div>
+                          
                             </div>
+
+
                         </div>
                         <div class="separator"></div>
                     </div>
@@ -404,24 +673,7 @@
                 </div>
             </main>
             <!-- Newsletter -->
-            <section class="get-offer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-5">
-                            <span>Subscribe to our Newsletter</span>
-                            <h2>& Discover the best offers!</h2>
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Enter Your Email" name="q">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit"><i class="flaticon-paper-plane"></i> Subscribe</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+       
         </div>
 
 
