@@ -71,20 +71,20 @@
                     <div class="row thm-margin">
                         <div id="blog-slide" class="owl-carousel">
                           
-
+                          @foreach($dataTreck as $item)
                              <div class="item">
                                 <div class="grid-item-inner">
                                     <div class="grid-img-thumb">
                                         <!-- ribbon -->
-                                        <div class="ribbon"><span>Popular</span></div>
-                                        <a href="{{URL::route('detalle_tour1') }}"><img src="/plantilla/assets/images/tour-370x370-1.jpg" alt="1" class="img-responsive" /></a>
+                                        <div class="ribbon"><span>Treck</span></div>
+                                        <a href="{{URL::route('detalle_tour1') }}"><img src="{{$item->img}}" alt="1" class="img-responsive" /></a>
                                     </div>
                                     <div class="grid-content">
                                         <div class="grid-price text-right">
                                             Only <span><sub>$</sub>991</span>
                                         </div>
                                         <div class="grid-text">
-                                            <div class="place-name">City sightseeing</div>
+                                          
                                             <div class="travel-times">
                                                 <h4 class="pull-left">3 days 2 nights </h4>
                                                 <span class="pull-right">
@@ -98,8 +98,10 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
-                        
+                            @endforeach
+                         
                         </div>
                     </div>
                 </div>
@@ -170,120 +172,13 @@
                     </div>
                     <div class="row thm-margin">
                         <div id="popular-slide" class="owl-carousel">
+                             @foreach($dataTreck as $item)
                             <div class="item">
                                 <div class="grid-item-inner">
                                     <div class="grid-img-thumb">
                                         <!-- ribbon -->
                                         <div class="ribbon"><span>Popular</span></div>
-                                        <a href="#"><img src="/plantilla/assets/images/tour-370x370-1.jpg" alt="1" class="img-responsive" /></a>
-                                    </div>
-                                    <div class="grid-content">
-                                        <div class="grid-price text-right">
-                                            Only <span><sub>$</sub>991</span>
-                                        </div>
-                                        <div class="grid-text">
-                                            <div class="place-name">City sightseeing</div>
-                                            <div class="travel-times">
-                                                <h4 class="pull-left">3 days 2 nights </h4>
-                                                <span class="pull-right">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="grid-item-inner">
-                                    <div class="grid-img-thumb">
-                                        <!-- ribbon -->
-                                        <div class="ribbon"><span>Popular</span></div>
-                                        <a href="#"><img src="/plantilla/assets/images/tour-370x370-7.jpg" alt="1" class="img-responsive" /></a>
-                                    </div>
-                                    <div class="grid-content">
-                                        <div class="grid-price text-right">
-                                            Only <span><sub>$</sub>785</span>
-                                        </div>
-                                        <div class="grid-text">
-                                            <div class="place-name">Beach Tour</div>
-                                            <div class="travel-times">
-                                                <h4 class="pull-left">3 days 2 nights </h4>
-                                                <span class="pull-right">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="grid-item-inner">
-                                    <div class="grid-img-thumb">
-                                        <!-- ribbon -->
-                                        <div class="ribbon"><span>Popular</span></div>
-                                        <a href="#"><img src="/plantilla/assets/images/tour-370x370-8.jpg" alt="1" class="img-responsive" /></a>
-                                    </div>
-                                    <div class="grid-content">
-                                        <div class="grid-price text-right">
-                                            Only <span><sub>$</sub>728</span>
-                                        </div>
-                                        <div class="grid-text">
-                                            <div class="place-name">Mariott Hotel</div>
-                                            <div class="travel-times">
-                                                <h4 class="pull-left">3 days 2 nights </h4>
-                                                <span class="pull-right">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="grid-item-inner">
-                                    <div class="grid-img-thumb">
-                                        <!-- ribbon -->
-                                        <div class="ribbon"><span>Popular</span></div>
-                                        <a href="#"><img src="/plantilla/assets/images/tour-370x370-9.jpg" alt="1" class="img-responsive" /></a>
-                                    </div>
-                                    <div class="grid-content">
-                                        <div class="grid-price text-right">
-                                            Only <span><sub>$</sub>885</span>
-                                        </div>
-                                        <div class="grid-text">
-                                            <div class="place-name">Adventure Toure</div>
-                                            <div class="travel-times">
-                                                <h4 class="pull-left">3 days 2 nights </h4>
-                                                <span class="pull-right">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="grid-item-inner">
-                                    <div class="grid-img-thumb">
-                                        <!-- ribbon -->
-                                        <div class="ribbon"><span>Popular</span></div>
-                                        <a href="#"><img src="/plantilla/assets/images/tour-370x370-2.jpg" alt="1" class="img-responsive" /></a>
+                                        <a href="#"><img src="{{$item->img}}" alt="1" class="img-responsive" /></a>
                                     </div>
                                     <div class="grid-content">
                                         <div class="grid-price text-right">
@@ -306,6 +201,7 @@
                                 </div>
                              
                             </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -423,62 +319,7 @@
                 </div>
             </section>
 
-            <!-- service -->
-                <!-- <section class="service-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="title">
-                                    <h2>Our Service</h2>
-                                    <p>This is Amazing Travel Agency !</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="col-sm-3 inner-box">
-                                    <article>
-                                        <div class="icon"><span class="flaticon-placeholder"></span></div>
-                                        <div class="content-text">
-                                            <h5>Diverse Destination</h5>
-                                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-3 inner-box">
-                                    <article>
-                                        <div class="icon"><span class="flaticon-map"></span></div>
-                                        <div class="content-text">
-                                            <h5>Fast Booking</h5>
-                                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-3 inner-box">
-                                    <article>
-                                        <div class="icon"><span class="flaticon-lemonade"></span></div>
-                                        <div class="content-text">
-                                            <h5>Drinks Included</h5>
-                                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-3 inner-box">
-                                    <article>
-                                        <div class="icon"><span class="flaticon-party"></span></div>
-                                        <div class="content-text">
-                                            <h5>After Partys</h5>
-                                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
-
-
-                 <!-- package section -->
+           
             <section class="package">
                 <div class="container">
                     <div class="row">
@@ -490,233 +331,16 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                            <div class="package-wiget">
-                                <div class="grid">
-                                    <figure class="effect-milo">
-                                        <img src="/plantilla/assets/images/Package-800x500-1.jpg" class="img-responsive" alt="">
-                                        <figcaption>
-                                            <div class="effect-block">
-                                                <h3>Hilton Molino Stucky</h3>
-                                                <div class="package-ratting">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-half-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                </div>
-                                                <button type="button" class="thm-btn">Explore Now</button>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="package-content">
-                                    <h5>Hilton Molino Stucky</h5>
-                                    <div class="package-price">from
-                                        <span class="price">
-                                            <span class="amount">$200.00</span>
-                                        </span>
-                                        /night
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                            <div class="package-wiget">
-                                <div class="grid">
-                                    <figure class="effect-milo">
-                                        <img src="/plantilla/assets/images/Package-800x500-2.jpg" class="img-responsive" alt="">
-                                        <figcaption>
-                                            <div class="effect-block">
-                                                <h3>Palolem, India</h3>
-                                                <div class="package-ratting">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-half-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                </div>
-                                                <button type="button" class="thm-btn">Explore Now</button>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="package-content">
-                                    <h5>Palolem, India</h5>
-                                    <div class="package-price">from
-                                        <span class="price">
-                                            <span class="amount">$150.00</span>
-                                        </span>
-                                        /night
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                            <div class="package-wiget">
-                                <div class="grid">
-                                    <figure class="effect-milo">
-                                        <div class="ribbon"><span>Popular</span></div>
-                                        <img src="/plantilla/assets/images/Package-800x500-3.jpg" class="img-responsive" alt="">
-                                        <figcaption>
-                                            <div class="effect-block">
-                                                <h3>IEiffel Tower, Paris</h3>
-                                                <div class="package-ratting">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-half-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                </div>
-                                                <button type="button" class="thm-btn">Explore Now</button>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="package-content">
-                                    <h5>IEiffel Tower, Paris</h5>
-                                    <div class="package-price">from
-                                        <span class="price">
-                                            <span class="amount">$290.00</span>
-                                        </span>
-                                        /night
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                            <div class="package-wiget">
-                                <div class="grid">
-                                    <figure class="effect-milo">
-                                        <img src="/plantilla/assets/images/Package-800x500-4.jpg" class="img-responsive" alt="">
-                                        <figcaption>
-                                            <div class="effect-block">
-                                                <h3>Canals of Venice, Italy</h3>
-                                                <div class="package-ratting">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-half-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                </div>
-                                                <button type="button" class="thm-btn">Explore Now</button>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="package-content">
-                                    <h5>Canals of Venice, Italy</h5>
-                                    <div class="package-price">from
-                                        <span class="price">
-                                            <span class="amount">$189.00</span>
-                                        </span>
-                                        /night
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                            <div class="package-wiget">
-                                <div class="grid">
-                                    <figure class="effect-milo">
-                                        <img src="/plantilla/assets/images/Package-800x500-5.jpg" class="img-responsive" alt="">
-                                        <figcaption>
-                                            <div class="effect-block">
-                                                <h3>Itali, Pisa</h3>
-                                                <div class="package-ratting">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-half-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                </div>
-                                                <button type="button" class="thm-btn">Explore Now</button>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="package-content">
-                                    <h5>Itali, Pisa</h5>
-                                    <div class="package-price">from
-                                        <span class="price">
-                                            <span class="amount">$139.00</span>
-                                        </span>
-                                        /night
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                            <div class="package-wiget">
-                                <div class="grid">
-                                    <figure class="effect-milo">
-                                        <div class="ribbon"><span>New</span></div>
-                                        <img src="/plantilla/assets/images/Package-800x500-6.jpg" class="img-responsive" alt="">
-                                        <figcaption>
-                                            <div class="effect-block">
-                                                <h3>St Paul's Cathedral, London</h3>
-                                                <div class="package-ratting">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-half-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                </div>
-                                                <button type="button" class="thm-btn">Explore Now</button>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="package-content">
-                                    <h5>St Paul's Cathedral, London</h5>
-                                    <div class="package-price">from
-                                        <span class="price">
-                                            <span class="amount">$180.00</span>
-                                        </span>
-                                        /night
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                    @foreach($dataTreck as $item)
                         <div class="col-xs-12 col-sm-4 col-md-3 hidden-sm">
                             <div class="package-wiget">
                                 <div class="grid">
                                     <figure class="effect-milo">
-                                        <img src="/plantilla/assets/images/Package-800x500-7.jpg" class="img-responsive" alt="">
+                                        <img src="{{$item->img}}" class="img-responsive" alt="">
                                         <figcaption>
                                             <div class="effect-block">
-                                                <h3>Castel Sant'Angelo. Rome</h3>
-                                                <div class="package-ratting">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-half-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                </div>
-                                                <button type="button" class="thm-btn">Explore Now</button>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="package-content">
-                                    <h5>Castel Sant'Angelo. Rome</h5>
-                                    <div class="package-price">from
-                                        <span class="price">
-                                            <span class="amount">$170.00</span>
-                                        </span>
-                                        /night
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 hidden-sm">
-                            <div class="package-wiget">
-                                <div class="grid">
-                                    <figure class="effect-milo">
-                                        <img src="/plantilla/assets/images/Package-800x500-8.jpg" class="img-responsive" alt="">
-                                        <figcaption>
-                                            <div class="effect-block">
-                                                <h3>Giza Necropolis, Egypt</h3>
+                                                <h3>{{$item->nombretour}}</h3>
                                                 <div class="package-ratting">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
@@ -740,6 +364,8 @@
                                 </div>
                             </div>
                         </div>
+                    @endforeach
+
                     </div>
                 </div>
             </section>
@@ -756,386 +382,32 @@
                         </div>
                     </div>
                     <div class="row thm-margin">
-                        <div class="col-md-3 col-sm-4 thm-padding">
-                            <div class="destination-grid">
-                                <a href="#"><img src="/plantilla/assets/images/destination-370x370-1.jpg" class="img-responsive" alt=""></a>
-                                <div class="mask">
-                                    <h2>Sydney</h2>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                    <a href="#" class="thm-btn">Read More</a>
-                                </div>
-                                <div class="dest-name">
-                                    <h5>Sydney Opera House</h5>
-                                    <h4>Sydney</h4>
-                                </div>
-                                <div class="dest-icon">
-                                    <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                    <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                    <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                    <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 thm-padding">
-                            <div class="destination-grid">
-                                <a href="#"><img src="/plantilla/assets/images/destination-370x370-2.jpg" class="img-responsive" alt=""></a>
-                                <div class="mask">
-                                    <h2>Brazil</h2>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                    <a href="#" class="thm-btn">Read More</a>
-                                </div>
-                                <div class="dest-name">
-                                    <h5>Fernando de Noronha</h5>
-                                    <h4>Brazil</h4>
-                                </div>
-                                <div class="dest-icon">
-                                    <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                    <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                    <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                    <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
+                         @foreach($dataTreck as $item)
+                            <div class="col-md-3 col-sm-4 hidden-sm thm-padding">
+                                <div class="destination-grid">
+                                    <a href="#"><img src="{{$item->img}}" class="img-responsive" alt=""></a>
+                                    <div class="mask">
+                                        <h2>London</h2>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                                        <a href="#" class="thm-btn">Read More</a>
+                                    </div>
+                                    <div class="dest-name">
+                                        <h5>Hop on Hop off Bus Tour</h5>
+                                        <h4>London</h4>
+                                    </div>
+                                    <div class="dest-icon">
+                                        <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
+                                        <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
+                                        <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
+                                        <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 thm-padding">
-                            <div class="destination-grid">
-                                <a href="#"><img src="/plantilla/assets/images/destination-370x370-3.jpg" class="img-responsive" alt=""></a>
-                                <div class="mask">
-                                    <h2>Istanbul</h2>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                    <a href="#" class="thm-btn">Read More</a>
-                                </div>
-                                <div class="dest-name">
-                                    <h5>Aya Sofya</h5>
-                                    <h4>Istanbul</h4>
-                                </div>
-                                <div class="dest-icon">
-                                    <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                    <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                    <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                    <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 thm-padding">
-                            <div class="destination-grid">
-                                <a href="#"><img src="/plantilla/assets/images/destination-370x370-4.jpg" class="img-responsive" alt=""></a>
-                                <div class="mask">
-                                    <h2>India</h2>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                    <a href="#" class="thm-btn">Read More</a>
-                                </div>
-                                <div class="dest-name">
-                                    <h5>Taj Mahal</h5>
-                                    <h4>India</h4>
-                                </div>
-                                <div class="dest-icon">
-                                    <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                    <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                    <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                    <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 thm-padding">
-                            <div class="destination-grid">
-                                <a href="#"><img src="/plantilla/assets/images/destination-370x370-5.jpg" class="img-responsive" alt=""></a>
-                                <div class="mask">
-                                    <h2>Italy</h2>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                    <a href="#" class="thm-btn">Read More</a>
-                                </div>
-                                <div class="dest-name">
-                                    <h5>Canals of Venice</h5>
-                                    <h4>Italy</h4>
-                                </div>
-                                <div class="dest-icon">
-                                    <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                    <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                    <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                    <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 thm-padding">
-                            <div class="destination-grid">
-                                <a href="#"><img src="/plantilla/assets/images/destination-370x370-6.jpg" class="img-responsive" alt=""></a>
-                                <div class="mask">
-                                    <h2>Paris</h2>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                    <a href="#" class="thm-btn">Read More</a>
-                                </div>
-                                <div class="dest-name">
-                                    <h5>Eiffel Tower</h5>
-                                    <h4>Paris</h4>
-                                </div>
-                                <div class="dest-icon">
-                                    <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                    <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                    <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                    <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 hidden-sm thm-padding">
-                            <div class="destination-grid">
-                                <a href="#"><img src="/plantilla/assets/images/destination-370x370-7.jpg" class="img-responsive" alt=""></a>
-                                <div class="mask">
-                                    <h2>London</h2>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                    <a href="#" class="thm-btn">Read More</a>
-                                </div>
-                                <div class="dest-name">
-                                    <h5>Hop on Hop off Bus Tour</h5>
-                                    <h4>London</h4>
-                                </div>
-                                <div class="dest-icon">
-                                    <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                    <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                    <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                    <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 hidden-sm thm-padding">
-                            <div class="destination-grid">
-                                <a href="#"><img src="/plantilla/assets/images/destination-370x370-8.jpg" class="img-responsive" alt=""></a>
-                                <div class="mask">
-                                    <h2>London</h2>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                    <a href="#" class="thm-btn">Read More</a>
-                                </div>
-                                <div class="dest-name">
-                                    <h5>Hop on Hop off Bus Tour</h5>
-                                    <h4>London</h4>
-                                </div>
-                                <div class="dest-icon">
-                                    <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                    <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                    <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                    <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
+
                     </div>
                 </div>
             </section>
-            <!-- hotel -->
-               <!--  <section class="hotel-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="title">
-                                    <h2>Recommended Hotels</h2>
-                                    <p>This is Amazing hotel in Paris !</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6">
-                                <div class="hotel-item">
-                                   
-                                    <div class="hotel-image">
-                                        <a href="#">
-                                            <div class="img"><img src="/plantilla/assets/images/hotel-1.jpg"  alt="" class="img-responsive"></div>
-                                        </a>
-                                    </div>
-                                  >
-                                    <div class="hotel-body">
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                      
-                                        <h3>Tours in Greece</h3>
-                                        
-                                        <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                        <div class="free-service">
-                                            <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                            <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                            <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                            <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                            <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        </div>
-                                    </div>
-                                    <div class="hotel-right"> 
-                                        <div class="hotel-person">from <span class="color-blue">$273</span> person</div>
-                                        <a class="thm-btn" href="#">Details</a>
-                                    </div>
-                                </div>
-                                <div class="hotel-item">
-                                    
-                                    <div class="hotel-image">
-                                        <a href="#">
-                                            <div class="img"><img src="/plantilla/assets/images/hotel-2.jpg"  alt="" class="img-responsive"></div>
-                                        </a>
-                                    </div>
-                                    
-                                    <div class="hotel-body">
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                      
-                                        <h3>Tours in Greece</h3>
-                                 ->
-                                        <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                        <div class="free-service">
-                                            <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                            <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                            <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                            <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                            <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        </div>
-                                    </div>
-                                    <div class="hotel-right"> 
-                                        <div class="hotel-person">from <span class="color-blue">$273</span> person</div>
-                                        <a class="thm-btn" href="#">Details</a>
-                                    </div>
-                                </div>
-                                <div class="hotel-item">
-                                    
-                                    <div class="hotel-image">
-                                        <a href="#">
-                                            <div class="img"><img src="/plantilla/assets/images/hotel-3.jpg"  alt="" class="img-responsive"></div>
-                                        </a>
-                                    </div>
-                                  
-                                    <div class="hotel-body">
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                 >
-                                        <h3>Burj Al Arab</h3>
-                                     
-                                        <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                        <div class="free-service">
-                                            <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                            <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                            <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                            <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                            <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        </div>
-                                    </div>
-                                    <div class="hotel-right"> 
-                                        <div class="hotel-person">from <span class="color-blue">$989</span> person</div>
-                                        <a class="thm-btn" href="#">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <div class="hotel-item">
-                                    
-                                    <div class="hotel-image">
-                                        <a href="#">
-                                            <div class="img"><img src="/plantilla/assets/images/hotel-4.jpg"  alt="" class="img-responsive"></div>
-                                        </a>
-                                    </div>
-                               
-                                    <div class="hotel-body">
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                    >
-                                        <h3>Tours in Greece</h3>
-                                      
-                                        <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                        <div class="free-service">
-                                            <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                            <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                            <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                            <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                            <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        </div>
-                                    </div>
-                                    <div class="hotel-right"> 
-                                        <div class="hotel-person">from <span class="color-blue">$273</span> person</div>
-                                        <a class="thm-btn" href="#">Details</a>
-                                    </div>
-                                </div>
-                                <div class="hotel-item">
-                                   
-                                    <div class="hotel-image">
-                                        <a href="#">
-                                            <div class="img"><img src="/plantilla/assets/images/hotel-5.jpg"  alt="" class="img-responsive"></div>
-                                        </a>
-                                    </div>
-                                   
-                                    <div class="hotel-body">
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                       
-                                        <h3>Tours in Greece</h3>
-                                       
-                                        <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                        <div class="free-service">
-                                            <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                            <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                            <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                            <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                            <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        </div>
-                                    </div>
-                                    <div class="hotel-right"> 
-                                        <div class="hotel-person">from <span class="color-blue">$273</span> person</div>
-                                        <a class="thm-btn" href="#">Details</a>
-                                    </div>
-                                </div>
-                                <div class="hotel-item">
-                                   
-                                    <div class="hotel-image">
-                                        <a href="#">
-                                            <div class="img"><img src="/plantilla/assets/images/hotel-6.jpg"  alt="" class="img-responsive"></div>
-                                        </a>
-                                    </div>
-                                   
-                                    <div class="hotel-body">
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                      
-                                        <h3>Park Hyatt Hotel</h3>
-                                        
-                                        <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                        <div class="free-service">
-                                            <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
-                                            <i class="flaticon-swimmer" data-toggle="tooltip" data-placement="top" title="" data-original-title="Swimming pool"></i>
-                                            <i class="flaticon-wifi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Free wifi"></i>
-                                            <i class="flaticon-weightlifting" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fitness center"></i>
-                                            <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
-                                        </div>
-                                    </div>
-                                    <div class="hotel-right"> 
-                                        <div class="hotel-person">from <span class="color-blue">$273</span> person</div>
-                                        <a class="thm-btn" href="#">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
             
            
           

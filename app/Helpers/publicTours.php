@@ -26,20 +26,20 @@ class publicTours
 
 	}
 
-	public static function toursPrincipal($idioma,$estadoPublicado)
+	public static function toursTreck($idioma,$estadoPublicado)
 	{
 		
 
-         $toursPublic = DB::table('languages')
-			        ->select('tours.id','tours.name','tours.description_short','tours.img','tours.price','tours.slug','categories.description as categoriesName')
-			        ->join('categories', 'languages.id', '=', 'categories.language_id')
-			        ->join('categories_has_tours as cat_t', 'cat_t.categorie_id', '=', 'categories.id')
-			        ->join('tours', 'cat_t.tour_id', '=', 'tours.id')
-			        ->where("tours.principal","=",$estadoPublicado)
-			        ->where("languages.abbr","=",$idioma)
-			        ->paginate(6);
+         $toursTreck = DB::table('tours')
+			             ->select('tours.nombre as nombretour','tipo_categoria_tours.nombre as categoriatour','tours.img','tours.slug')
+			             ->join('tour_categoria','tour_categoria.tour_id','=','tours.id')
+			             ->join('tipo_categoria_tours','tipo_categoria_tours.id','=','tour_categoria.categoria_id')
+			             ->join('languages','languages.id','=','tipo_categoria_tours.lenguaje_id')
+			              ->where("tours.principal","=",$estadoPublicado)
+			              ->where("languages.abrr","=",$idioma)
+			             ->paginate(8);
 
-		return $toursPublic;
+		return $toursTreck;
 
 	}
 	
