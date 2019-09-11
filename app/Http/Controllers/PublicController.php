@@ -6,16 +6,19 @@ use Illuminate\Http\Request;
 use DB;
 use App\Models\Blog;
 use App\Models\tours;
+use App\Helpers\publicTours;
 class PublicController extends Controller
 {
-   public function index()
+   public function index($idioma)
    {
         $data =  DB::table('tours')
              ->select('tours.nombre as nombretour','tipo_categoria_tours.nombre as categoriatour','tours.img','tours.slug')
              ->join('tour_categoria','tour_categoria.tour_id','=','tours.id')
              ->join('tipo_categoria_tours','tipo_categoria_tours.id','=','tour_categoria.categoria_id')
              ->paginate(4);
-             
+
+        // $toursPrincipal=publicTours::toursPrincipal($idioma,'1');  
+        // dd($toursPrincipal); 
        
    	return view('assets.pagina.es.inicio',['data'=>$data]);
    	
@@ -207,5 +210,11 @@ class PublicController extends Controller
    {
        return view('public.es.testimonios.index');
    }
+
+  public function detalleTour1()
+  {
+    
+      return view('assets.pagina.es.detalleTour');
+  }
    
 }

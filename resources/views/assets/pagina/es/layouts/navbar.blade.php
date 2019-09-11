@@ -9,7 +9,7 @@
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
                         </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="/">
                             <img src="/plantilla/logo.png" class="img-resposive" alt="" style="height: 90px;width: 120px;margin-top: -20px;z-index: 100;">
                         </a>
                     </div>

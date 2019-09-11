@@ -141,6 +141,6 @@
         {!!Html::script('plantilla/assets/js/ion.rangeSlider.min.js')!!}
         {!!Html::script('plantilla/assets/js/jquery.easing.min.js')!!}
         {!!Html::script('plantilla/assets/js/custom.js')!!}
-
+        @yield('script')
     </body>
 </html>
