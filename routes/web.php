@@ -32,7 +32,12 @@ Route::get('/', function () {
 Route::get('/{es?}', 'PublicController@index');
 Route::get('/contacto', 'PublicController@contacto');
 Route::get('{es?}/blog',['uses'=>'PublicController@blog'])->name('blogEs');
+
 Route::get('{es?}/nosotros',['uses'=>'PublicController@about'])->name('aboutEs');
+
+Route::get('{es?}/contacto',['uses'=>'PublicController@contacto'])->name('contactEs');
+// Route::get('/nosotros', 'PublicController@nosotros');
+
 
 // /*__________________inicio estañol_________________________________________________________________*/
 // Route::get('{lang?}/nosotros/', [ 'uses' => 'PublicController@about' ])->name('nosotrosEs');

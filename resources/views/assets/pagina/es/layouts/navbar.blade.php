@@ -26,8 +26,10 @@
                                 </ul>
                             </li>
                             <li><a href="{{route('blogEs',['es'=>'es'])}}">Blog</a></li>
+
                             <li><a href="{{route('aboutEs',['es'=>'es'])}}">Nosotros</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
+                            <li><a href="{{route('contactEs',['es'=>'es'])}}">Contacto</a></li>
+
                         </ul>
                         <ul class="nav navbar-nav navbar-right hidden-sm">
                             <li><a class="nav-btn" href="#"><div class="thm-btn">Cotizar</div></a></li>

@@ -1,40 +1,24 @@
 @extends('assets.pagina.es.layouts.master')
 
 @section('content')
-   <script>
+  
 
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1588538331453581');
-  fbq('track', 'Contact');
-</script>
-<noscript>
-    <img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1588538331453581&ev=PageView&noscript=1"
-/>
-</noscript>
     <!-- page header -->
-     <div id="map" class="destination-map"></div>
-            <!--<section class="header header-bg-10" style="margin-top: -200px;">-->
-            <!--    <div class="container">-->
-            <!--        <div class="row">-->
-            <!--            <div class="col-md-8 col-md-offset-2">-->
-            <!--                <div class="header-content">-->
-            <!--                    <div class="header-content-inner">-->
-            <!--                        <h1>CONTACTO</h1>-->
+   
+            <section class="header header-bg-10" style="margin-top: -200px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="header-content">
+                                <div class="header-content-inner">
+                                    <h1>CONTACTO</h1>
                                 
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!--        </div>-->
-            <!--    </div>-->
-            <!--</section>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- contact -->
             <section class="contact-inner">
                 <div class="container">
@@ -42,7 +26,7 @@
                     
                         <div class="col-sm-8">
                             <div class="contact-form">
-                                {!! Form::open(['route' => ['contacto-reserva.store'] , 'method' => 'POST']) !!}
+                                
                                     <h2>CONTÁCTENOS</h2>
                                     <div class="row">
                                         <div class="col-sm-6">
@@ -88,7 +72,7 @@
                                     </div>
                            
                                     <button type="submit" class="thm-btn" > enviar </button> 
-                                {!! Form::close() !!}
+                         
                             </div>
                         </div>
                         <div class="col-sm-4">
