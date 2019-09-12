@@ -21,7 +21,7 @@ Route:: get('/detalle_tour1','PublicController@detalleTour1')->name('detalle_tou
 Route::get('/{es?}', 'PublicController@index');
 Route::get('/contacto', 'PublicController@contacto');
 
-Route::get('/nosotros', 'PublicController@contacto');
+Route::get('/nosotros', 'PublicController@nosotros');
 // /*__________________inicio estañol_________________________________________________________________*/
 // Route::get('{lang?}/nosotros/', [ 'uses' => 'PublicController@about' ])->name('nosotrosEs');
 // Route::get('{lang?}/testimonio/', [ 'uses' => 'PublicController@testimony' ])->name('testimonioEs');
