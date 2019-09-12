@@ -200,14 +200,14 @@ class PublicController extends Controller
         return view('assets.pagina.'.$idioma.'.detalletour',['detalleTour'=>$detalleTour,'multimedia'=>$multimedia,'itinerario'=>$itinerario]);
    }
    
-   public function contacto()
-   {
-       return view('public.es.contacto.index');
-   }
-   public function nosotros()
-   {
-       return view('public.es.nosotros.index');
-   }
+   // public function contacto()
+   // {
+   //     return view('public.es.contacto.index');
+   // }
+   // public function nosotros()
+   // {
+   //     return view('public.es.nosotros.index');
+   // }
    
    public function testimonios()
    {
@@ -222,7 +222,10 @@ class PublicController extends Controller
 
   public function blog($idioma)
   {
-    
       return view('assets.pagina.'.$idioma.'.blog');
+  }
+  public function about($idioma)
+  {
+      return view('assets.pagina.'.$idioma.'.about_us');
   }
 }

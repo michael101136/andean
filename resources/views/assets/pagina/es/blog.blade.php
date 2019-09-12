@@ -73,90 +73,90 @@
                            
                          
                          
-                        <h4 style="margin-top: 39px;position: absolute;">Noticias </h4><div class="separator" style="width: 90%;margin-right: -5px;"></div>
+                        <h4 style="margin-top: 39px;position: absolute;">Eventos </h4><div class="separator" style="width: 90%;margin-right: -5px;"></div>
                         <div class="row">
                                 
-                        <div class="col-sm-12 col-md-12">
-                            <div class="hotel-list-content">
-                               
-                                <div class="hotel-item">
-                                    <!-- hotel Image-->
-                                    <div class="hotel-image">
-                                        <a href="#">
-                                            <div class="img"><img src="https://cadenaser00.epimg.net/programa/imagenes/2017/01/16/ser_consumidor/1484562969_320446_1484564164_noticia_normal.jpg"  alt="" class="img-responsive"></div>
-                                        </a>
-                                    </div>
-                                    <!-- hotel body-->
-                                    <div class="hotel-body">
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>
+                            <div class="col-sm-12 col-md-12">
+                                <div class="hotel-list-content">
+                                   
+                                    <div class="hotel-item">
+                                        <!-- hotel Image-->
+                                        <div class="hotel-image">
+                                            <a href="#">
+                                                <div class="img"><img src="https://cadenaser00.epimg.net/programa/imagenes/2017/01/16/ser_consumidor/1484562969_320446_1484564164_noticia_normal.jpg"  alt="" class="img-responsive"></div>
+                                            </a>
                                         </div>
-                                        <!-- title-->
-                                        <h3>Tours in Greece</h3>
-                                        <!-- Text Intro-->
-                                        <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
+                                        <!-- hotel body-->
+                                        <div class="hotel-body">
+                                            <div class="ratting">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <!-- title-->
+                                            <h3>Tours in Greece</h3>
+                                            <!-- Text Intro-->
+                                            <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
+                                           
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hotel-item">
+                                        <!-- hotel Image-->
+                                        <div class="hotel-image">
+                                            <a href="#">
+                                                <div class="img"><img src="https://cadenaser00.epimg.net/programa/imagenes/2017/01/16/ser_consumidor/1484562969_320446_1484564164_noticia_normal.jpg"  alt="" class="img-responsive"></div>
+                                            </a>
+                                        </div>
+                                        <!-- hotel body-->
+                                        <div class="hotel-body">
+                                            <div class="ratting">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <!-- title-->
+                                            <h3>Park Hyatt Hotel</h3>
+                                            <!-- Text Intro-->
+                                            <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
+                                          
+                                        </div>
                                        
                                     </div>
-                                    
-                                </div>
-                                <div class="hotel-item">
-                                    <!-- hotel Image-->
-                                    <div class="hotel-image">
-                                        <a href="#">
-                                            <div class="img"><img src="https://cadenaser00.epimg.net/programa/imagenes/2017/01/16/ser_consumidor/1484562969_320446_1484564164_noticia_normal.jpg"  alt="" class="img-responsive"></div>
-                                        </a>
-                                    </div>
-                                    <!-- hotel body-->
-                                    <div class="hotel-body">
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>
+                                    <div class="hotel-item">
+                                        <!-- hotel Image-->
+                                        <div class="hotel-image">
+                                            <a href="#">
+                                                <div class="img"><img src="https://cadenaser00.epimg.net/programa/imagenes/2017/01/16/ser_consumidor/1484562969_320446_1484564164_noticia_normal.jpg"  alt="" class="img-responsive"></div>
+                                            </a>
                                         </div>
-                                        <!-- title-->
-                                        <h3>Park Hyatt Hotel</h3>
-                                        <!-- Text Intro-->
-                                        <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
+                                        <!-- hotel body-->
+                                        <div class="hotel-body">
+                                            <div class="ratting">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <!-- title-->
+                                            <h3>Park Hyatt Hotel</h3>
+                                            <!-- Text Intro-->
+                                            <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
+                                           
+                                        </div>
                                       
                                     </div>
                                    
-                                </div>
-                                <div class="hotel-item">
-                                    <!-- hotel Image-->
-                                    <div class="hotel-image">
-                                        <a href="#">
-                                            <div class="img"><img src="https://cadenaser00.epimg.net/programa/imagenes/2017/01/16/ser_consumidor/1484562969_320446_1484564164_noticia_normal.jpg"  alt="" class="img-responsive"></div>
-                                        </a>
-                                    </div>
-                                    <!-- hotel body-->
-                                    <div class="hotel-body">
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <!-- title-->
-                                        <h3>Park Hyatt Hotel</h3>
-                                        <!-- Text Intro-->
-                                        <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                       
-                                    </div>
-                                  
-                                </div>
-                               
 
 
+                                </div>
+                                
                             </div>
-                            
-                        </div>
 
                                  
                     
@@ -169,12 +169,12 @@
                         <div class="col-md-4 col-sm-4">
                             <div class="sidber-box cats-widget">
                                 <div class="cats-title">
-                                    All Categories
+                                    CATEGORIAS
                                 </div>
                                 <ul>	
                                     <li><a href="#">All</a> <span>50</span></li>
-                                    <li><a href="#">Top tours</a> <span>9</span></li>
-                                    <li><a href="#">Romance</a> <span>32</span></li>
+                                    <li><a href="#">Eventos</a> <span>9</span></li>
+                                    <li><a href="#">Tradiconal</a> <span>32</span></li>
                                 
                                 </ul>
                             </div>
@@ -191,33 +191,15 @@
                             <!-- help center -->
                             <div class="sidber-box help-widget">
                                 <i class="flaticon-photographer-with-cap-and-glasses"></i>
-                                <h4>Need <span>Help?</span></h4>
-                                <a href="#" class="phone">+001620214460</a>
-                                <small>Monday to Friday 9.00am - 7.30pm</small>
+                                <h4>Necesita <span>ayuda?</span></h4>
+                                <a href="#" class="phone">+51 (84) 229-911</a>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Newsletter -->
-            <section class="get-offer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-5">
-                            <span>Subscribe to our Newsletter</span>
-                            <h2>& Discover the best offers!</h2>
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Enter Your Email" name="q">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit"><i class="flaticon-paper-plane"></i> Subscribe</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
         </div>
 
 
