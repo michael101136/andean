@@ -25,7 +25,7 @@
                                    
                                 </ul>
                             </li>
-                            <li><a href="blog-grid-1.html">Blog</a></li>
+                            <li><a href="{{route('blogEs',['es'=>'es'])}}">Blog</a></li>
                             <li><a href="about.html">Nosotros</a></li>
                             <li><a href="contact.html">Contacto</a></li>
                         </ul>

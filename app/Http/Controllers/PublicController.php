@@ -28,51 +28,51 @@ class PublicController extends Controller
 
 
 
-   public function blog(Request $request)
-   {
+   // public function blog(Request $request)
+   // {
 
-      $data = DB::table('blogs')
-         ->select('blogs.url','blogs.descripcioncorta','blogs.fechaPublicacion','blogs.id','blogs.titulo','blogs.contenido','blogs.urlimagen','categoria_blogs.nombre as tipoblog')
-         ->join('categoria_blogs','categoria_blogs.id','=','blogs.categoria_blog_id')
-         ->paginate(4);
+   //    $data = DB::table('blogs')
+   //       ->select('blogs.url','blogs.descripcioncorta','blogs.fechaPublicacion','blogs.id','blogs.titulo','blogs.contenido','blogs.urlimagen','categoria_blogs.nombre as tipoblog')
+   //       ->join('categoria_blogs','categoria_blogs.id','=','blogs.categoria_blog_id')
+   //       ->paginate(4);
 
-      $cultura = DB::table('blogs')
-         ->select('blogs.url','blogs.descripcioncorta','blogs.fechaPublicacion','blogs.id','blogs.titulo','blogs.contenido','blogs.urlimagen','categoria_blogs.nombre as tipoblog')
-         ->join('categoria_blogs','categoria_blogs.id','=','blogs.categoria_blog_id')
-         ->where('categoria_blogs.nombre','=','cultura')
-         ->paginate(2);
+   //    $cultura = DB::table('blogs')
+   //       ->select('blogs.url','blogs.descripcioncorta','blogs.fechaPublicacion','blogs.id','blogs.titulo','blogs.contenido','blogs.urlimagen','categoria_blogs.nombre as tipoblog')
+   //       ->join('categoria_blogs','categoria_blogs.id','=','blogs.categoria_blog_id')
+   //       ->where('categoria_blogs.nombre','=','cultura')
+   //       ->paginate(2);
 
-      $gastronomia = DB::table('blogs')
-         ->select('blogs.url','blogs.descripcioncorta','blogs.fechaPublicacion','blogs.id','blogs.titulo','blogs.contenido','blogs.urlimagen','categoria_blogs.nombre as tipoblog')
-         ->join('categoria_blogs','categoria_blogs.id','=','blogs.categoria_blog_id')
-         ->where('categoria_blogs.nombre','=','gastronomia')
-         ->paginate(2);
+   //    $gastronomia = DB::table('blogs')
+   //       ->select('blogs.url','blogs.descripcioncorta','blogs.fechaPublicacion','blogs.id','blogs.titulo','blogs.contenido','blogs.urlimagen','categoria_blogs.nombre as tipoblog')
+   //       ->join('categoria_blogs','categoria_blogs.id','=','blogs.categoria_blog_id')
+   //       ->where('categoria_blogs.nombre','=','gastronomia')
+   //       ->paginate(2);
 
-      $destinos =DB::table('blogs')
-         ->select('blogs.url','blogs.descripcioncorta','blogs.fechaPublicacion','blogs.id','blogs.titulo','blogs.contenido','blogs.urlimagen','categoria_blogs.nombre as tipoblog')
-         ->join('categoria_blogs','categoria_blogs.id','=','blogs.categoria_blog_id')
-         ->where('categoria_blogs.nombre','=','destinos')
-         ->paginate(2);
+   //    $destinos =DB::table('blogs')
+   //       ->select('blogs.url','blogs.descripcioncorta','blogs.fechaPublicacion','blogs.id','blogs.titulo','blogs.contenido','blogs.urlimagen','categoria_blogs.nombre as tipoblog')
+   //       ->join('categoria_blogs','categoria_blogs.id','=','blogs.categoria_blog_id')
+   //       ->where('categoria_blogs.nombre','=','destinos')
+   //       ->paginate(2);
 
-      $noticias = DB::table('blogs')
-         ->select('blogs.url','blogs.descripcioncorta','blogs.fechaPublicacion','blogs.id','blogs.titulo','blogs.contenido','blogs.urlimagen','categoria_blogs.nombre as tipoblog')
-         ->join('categoria_blogs','categoria_blogs.id','=','blogs.categoria_blog_id')
-         ->where('categoria_blogs.nombre','=','noticias')
-         ->paginate(2);
+   //    $noticias = DB::table('blogs')
+   //       ->select('blogs.url','blogs.descripcioncorta','blogs.fechaPublicacion','blogs.id','blogs.titulo','blogs.contenido','blogs.urlimagen','categoria_blogs.nombre as tipoblog')
+   //       ->join('categoria_blogs','categoria_blogs.id','=','blogs.categoria_blog_id')
+   //       ->where('categoria_blogs.nombre','=','noticias')
+   //       ->paginate(2);
       
       
 
-      if($request->ajax()) 
-      {
-          return response()->json(view("public.es.blog.principal_blog.pricipal_blog",compact('data'))->render());
-      }
+   //    if($request->ajax()) 
+   //    {
+   //        return response()->json(view("public.es.blog.principal_blog.pricipal_blog",compact('data'))->render());
+   //    }
 
-      $categoria = DB::table('categoria_blogs')
-         ->select('*') 
-         ->get();
+   //    $categoria = DB::table('categoria_blogs')
+   //       ->select('*') 
+   //       ->get();
 
-      return view("public.es.blog.blog",compact('data','categoria','cultura','gastronomia','destinos','noticias'));
-   }
+   //    return view("public.es.blog.blog",compact('data','categoria','cultura','gastronomia','destinos','noticias'));
+   // }
 
    public function detalleBlog($url)
    {
@@ -219,5 +219,10 @@ class PublicController extends Controller
     
       return view('assets.pagina.es.detalleTour');
   }
-   
+
+  public function blog($idioma)
+  {
+    
+      return view('assets.pagina.'.$idioma.'.blog');
+  }
 }

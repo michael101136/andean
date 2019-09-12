@@ -70,137 +70,8 @@
                                 
                                
                             </div>
-                             <h4 style="margin-top: 39px;position: absolute;">Noticias </h4><div class="separator" style="width: 90%;margin-right: -5px;"></div>
-                            
-                            <div class="row">
-                                
-                        
-
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="team_member">
-                                            <div class="img-zoom-in">
-                                                <img src="http://blog.redbus.pe/wp-content/uploads/2019/03/IMAGEN-SEMANA-SANTA-2011-393-218x150.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="team_text">
-                                                <div class="team_text_inner">
-                                                    <h4>Chris Mcgee</h4>
-                                                    <p>Marketer</p>
-                                                </div>
-                                                <div class="team_media">
-                                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="team_member">
-                                            <div class="img-zoom-in">
-                                                <img src="http://blog.redbus.pe/wp-content/uploads/2019/03/IMAGEN-SEMANA-SANTA-2011-393-218x150.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="team_text">
-                                                <div class="team_text_inner">
-                                                    <h4>Francisco Soto</h4>
-                                                    <p>CEO</p>
-                                                </div>
-                                                <div class="team_media">
-                                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="team_member">
-                                            <div class="img-zoom-in">
-                                                <img src="http://blog.redbus.pe/wp-content/uploads/2019/03/IMAGEN-SEMANA-SANTA-2011-393-218x150.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="team_text">
-                                                <div class="team_text_inner">
-                                                    <h4>Michael Dawson</h4>
-                                                    <p>Programmer</p>
-                                                </div>
-                                                <div class="team_media">
-                                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                    
-                               
-                         </div>
-                             <h4 style="margin-top: 39px;position: absolute;">Noticias </h4><div class="separator" style="width: 90%;margin-right: -5px;"></div>
-                       <div class="row">
-                                
-                        
-
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="team_member">
-                                            <div class="img-zoom-in">
-                                                <img src="http://blog.redbus.pe/wp-content/uploads/2019/03/IMAGEN-SEMANA-SANTA-2011-393-218x150.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="team_text">
-                                                <div class="team_text_inner">
-                                                    <h4>Chris Mcgee</h4>
-                                                    <p>Marketer</p>
-                                                </div>
-                                                <div class="team_media">
-                                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="team_member">
-                                            <div class="img-zoom-in">
-                                                <img src="http://blog.redbus.pe/wp-content/uploads/2019/03/IMAGEN-SEMANA-SANTA-2011-393-218x150.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="team_text">
-                                                <div class="team_text_inner">
-                                                    <h4>Francisco Soto</h4>
-                                                    <p>CEO</p>
-                                                </div>
-                                                <div class="team_media">
-                                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="team_member">
-                                            <div class="img-zoom-in">
-                                                <img src="http://blog.redbus.pe/wp-content/uploads/2019/03/IMAGEN-SEMANA-SANTA-2011-393-218x150.jpg" alt="" class="img-responsive">
-                                            </div>
-                                            <div class="team_text">
-                                                <div class="team_text_inner">
-                                                    <h4>Michael Dawson</h4>
-                                                    <p>Programmer</p>
-                                                </div>
-                                                <div class="team_media">
-                                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                    
-                               
-                         </div>
+                           
+                         
                          
                         <h4 style="margin-top: 39px;position: absolute;">Noticias </h4><div class="separator" style="width: 90%;margin-right: -5px;"></div>
                         <div class="row">
@@ -307,27 +178,7 @@
                                 
                                 </ul>
                             </div>
-                            <div class="sidber-box popular-post-widget">
-                                <div class="cats-title">Últimos Posts</div>
-                                <div class="popular-post-inner">
-                                    
-                                     <ul class="comments-list">
-                                        <li>
-                                            <div class="comment-main-level">
-                                                <!-- Avatar -->
-                                                <div class="comment-avatar"><img src="http://terratravelrd.com/wp-content/uploads/2017/01/top-destinations-machu-picchu-1.jpg" alt=""></div>
-                                                <div class="comment-box">
-                                                    <div class="comment-content">
-                                                        <div class="comment-header"> <cite class="comment-author">Ruta roja en Cusco: descubre el valle y río que llevan... </cite>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
+                          
                             <!-- tags -->
                             <div class="sidber-box tags-widget">
                                 <div class="cats-title">Tags </div>
