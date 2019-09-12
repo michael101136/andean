@@ -9,16 +9,24 @@ use App\Models\tours;
 use App\Helpers\publicTours;
 class PublicController extends Controller
 {
-   public function index($idioma)
+   public function index()
    {
-        $dataTreck = publicTours::toursTreck($idioma,'1'); 
-        // dd($data);
-        // // $toursPrincipal=publicTours::toursPrincipal($idioma,'1');  
-        // // dd($toursPrincipal); 
-   
-   	return view('assets.pagina.es.inicio',['dataTreck'=>$dataTreck]);
-   	
+       
+    return redirect('/es');
+
    }
+   public function lang($abbr='es')
+   {
+      if($abbr =='es' || $abbr=='en' )
+      {
+         $dataTreck = publicTours::toursTreck($abbr,'1'); 
+
+         return view('assets.pagina.'.$abbr.'.inicio',['dataTreck'=>$dataTreck]);
+      }
+     
+    }
+
+
 
    public function blog(Request $request)
    {
@@ -172,25 +180,24 @@ class PublicController extends Controller
         return response()->json(view("public.es.tour.categoria.categoria",compact('data'))->render());     
          
     }
-   public function detalleTour($slug)
+   public function detalleTour($idioma,$slug)
    {
+        
         $detalleTour = tours::where('slug', '=', $slug)->get()[0];
-    
+       
         $multimedia = db::table('tours')
             ->select('tours.multimedia_id','imagen.url as img')
             ->join('multimedia','multimedia.id','=','tours.multimedia_id')
             ->join('imagen','imagen.multimedia_id','=','multimedia.id')
             ->where('tours.slug','=',$slug)
             ->get();
-        
         $itinerario = db::table('itinerarios')
             ->select('itinerarios.nombre as itinerarionombre','tours.slug','itinerarios.descripcion as descripcionitinerario','itinerarios.dia')
             ->join('tours','tours.id','=','itinerarios.id_tour')
             ->where('tours.slug','=',$slug)
             ->get();
-            
-        // dd($itinerario);
-        return view('public.es.tour.detalletour',['detalleTour'=>$detalleTour,'multimedia'=>$multimedia,'itinerario'=>$itinerario]);
+     
+        return view('assets.pagina.'.$idioma.'.detalletour',['detalleTour'=>$detalleTour,'multimedia'=>$multimedia,'itinerario'=>$itinerario]);
    }
    
    public function contacto()
@@ -207,7 +214,7 @@ class PublicController extends Controller
        return view('public.es.testimonios.index');
    }
 
-  public function detalleTour1()
+  public function detalleTour1($idioma,$slug)
   {
     
       return view('assets.pagina.es.detalleTour');

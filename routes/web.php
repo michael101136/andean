@@ -10,23 +10,24 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
+Auth::routes();
+Route::get('/{lang?}', [ 'uses' => 'PublicController@lang' ])->name('idiomas');
+Route::get('{es?}/detalletour/{slug?}',['uses'=>'PublicController@detalleTour'])->name('detalletourEs');
 Route::get('/', function () {
     return redirect('/es');
 });
 
-Route:: get('/detalle_tour1','PublicController@detalleTour1')->name('detalle_tour1');
+// Route:: get('/detalle_tour1','PublicController@detalleTour1')->name('detalle_tour1');
 
-Route::get('/{es?}', 'PublicController@index');
+// Route::get('/{es?}', 'PublicController@index');
 
-Route::get('{es?}/detalletour/{slug?}',['uses'=>'PublicController@detalle_tour1'])->name('detalletourEs');
 
-Auth::routes();
 
-Route::get('/contacto', 'PublicController@contacto');
 
-Route::get('/nosotros', 'PublicController@contacto');
+
+// Route::get('/contacto', 'PublicController@contacto');
+
+// Route::get('/nosotros', 'PublicController@contacto');
 
 // /*__________________inicio estañol_________________________________________________________________*/
 // Route::get('{lang?}/nosotros/', [ 'uses' => 'PublicController@about' ])->name('nosotrosEs');

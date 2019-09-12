@@ -37,8 +37,10 @@
               </div>
               <div class="info-item-content">
                 <div class="main-title">
-                  <h3 class="title"><span class="font-4"> {{$item->categoriatour}} </span> </h3>
-                  <div class="price"><span>  </span> </div><a href="{{route('detalletour',['tour'=>$item->slug])}}" class="button">Detalle</a>
+                  <h3 class="title"><span class="font-4"> {{$item->categoriatour}} </span> 
+                  </h3>
+                  <div class="price"><span>  </span> </div>
+                  <a href="{{route('detalletourEs',['es'=>'es','tour' => $itemp->slug])}}" class="button">Detalle</a>
                 </div>
               </div>
             </div>

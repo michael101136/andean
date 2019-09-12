@@ -10,6 +10,7 @@
         color: #ffffff;
     }
 
+
 </style>
 
  
@@ -21,21 +22,17 @@
                                 <div class="header-content-inner">
                                     <div class="toure-title">
                                         <i class="fa fa-eye"></i>
-                                        <h1>Transfagarasan road trip</h1>
+                                        <h1>{{$detalleTour->nombre}}</h1>
                                     </div>
                                     <div class="row">
                                         <div class="col-xs-6 col-sm-2">
                                             <div class="trip">
-                                                <i class="flaticon-cabin"></i>
-                                                <h5>Lodging</h5>
-                                                <p>Hotels, Eco Lodges, </p>
+                                              
                                             </div>
                                         </div>
                                         <div class="col-xs-6 col-sm-2">
                                             <div class="trip">
-                                                <i class="flaticon-dollar-coins"></i>
-                                                <h5>Price</h5>
-                                                <p>$3,695 per person</p>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-xs-6 col-sm-2">
@@ -54,16 +51,12 @@
                                         </div>
                                         <div class="col-xs-6 col-sm-2">
                                             <div class="trip">
-                                                <i class="flaticon-bicycle"></i>
-                                                <h5>Transport</h5>
-                                                <p>Overland, Flights</p>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-xs-6 col-sm-2">
                                             <div class="trip">
-                                                <i class="flaticon-cabin"></i>
-                                                <h5>Lodging</h5>
-                                                <p>Hotels, Eco Lodges, </p>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -97,20 +90,19 @@
                                 <div class="section-title text-center">
                                     <i class="flaticon-experiment-results"></i>
                                     <h2>Detalles del tour</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                   
                                 </div>
                             </div>
                             <div class="col-sm-8">
                                 <div class="experience-title">
                                     <h2>Experience</h2>
-                                    <h3>Access to free education for everyone</h3>
+                                   
 
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                         when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
                                         into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
                                         passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five .</p>
+                                    
                                 </div>
                                 <div class="middle-content">
                                     <div class="row">
@@ -221,7 +213,6 @@
                                 <div class="section-title text-center">
                                     <i class="flaticon-arrows"></i>
                                     <h2>Itinerarios</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                                 </div>
                             </div>
                             <div class="col-md-offset-2 col-md-4">
@@ -234,43 +225,22 @@
 
                              <div class="col-sm-8">
                                 <div class="experience-title">
-                                    <h2>Itinerario</h2>
+                                    
                                  <div class="row">
                                      <div class="col-md-12">
-                                            <div id="accordion">
-                                          <h3 class="tap_acoordion">Section 1</h3>
+                                        <div id="accordion">
+                                          
+                                          @foreach($itinerario as $data)
+                                          <h3 class="tap_acoordion">{{$data->dia}} - {{$data->itinerarionombre}}</h3>
+                                          
                                           <div>
-                                            <p>
-                                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
-                                            </p>
+                                           <h5><div class="themeUl" style=" text-align:justify;">{!!$data->descripcionitinerario!!}</div></h5>
+                                            <!-- {!!$data->descripcionitinerario!!}  -->
+                                            
                                           </div>
-                                          <h3 class="tap_acoordion">Section 2</h3>
-                                          <div>
-                                            <p>
-                                            Sed non urna. Donec et ante. Phasellus eu ligula.
-                                            </p>
-                                          </div>
-                                          <h3 class="tap_acoordion">Section 3</h3>
-                                          <div>
-                                            <p>
-                                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                                            Phasellus pellentesque purus in massa. Aenean in pede.
-                                            </p>
-                                            <ul>
-                                              <li>List item one</li>
-                                              <li>List item two</li>
-                                              <li>List item three</li>
-                                            </ul>
-                                          </div>
-                                          <h3 class="tap_acoordion">Section 4</h3>
-                                          <div>
-                                            <p>
-                                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus.
-                                            </p>
-                                            <p>
-                                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                                            </p>
-                                          </div>
+                                          @endforeach
+                                          
+                                          
                                         </div>
                                      </div>
 
@@ -348,55 +318,32 @@
                                 <div class="section-title text-center">
                                     <i class="flaticon-sidebar"></i>
                                     <h2>GALLERY</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                </div>
-                            </div>
-                            <div class="col-md-offset-2 col-md-4">
-                                <div class="section-title text-center">
                                     
                                 </div>
                             </div>
+                            
                         </div>
                         <div class="col-sm-8">
-                                 <section class="hotels-details-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-sm-8">
-                            <div id="sync1" class="owl-carousel">
-                                <div class="item"><img src="/plantilla/assets/images/hotel-750x420-1.jpg" class="img-responsive" alt=""></div>
-                                <div class="item"><img src="/plantilla/assets/images/hotel-750x420-2.jpg" class="img-responsive" alt=""></div>
-                                <div class="item"><img src="/plantilla/assets/images/hotel-750x420-3.jpg" class="img-responsive" alt=""></div>
-                                <div class="item"><img src="/plantilla/assets/images/hotel-750x420-4.jpg" class="img-responsive" alt=""></div>
-                                <div class="item"><img src="/plantilla/assets/images/hotel-750x420-5.jpg" class="img-responsive" alt=""></div>
-                                <div class="item"><img src="/plantilla/assets/images/hotel-750x420-6.jpg" class="img-responsive" alt=""></div>
-                                <div class="item"><img src="/plantilla/assets/images/hotel-750x420-1.jpg" class="img-responsive" alt=""></div>
-                            </div>
-                            <div id="sync2" class="owl-carousel">
-                                <div class="item"><img src="/plantilla/assets/images/hotel-140x90-1.jpg" class="img-responsive" alt=""></div>
-                                <div class="item"><img src="/plantilla/assets/images/hotel-140x90-2.jpg" class="img-responsive" alt=""></div>
-                                <div class="item"><img src="/plantilla/assets/images/hotel-140x90-3.jpg" class="img-responsive" alt=""></div>
-                                <div class="item"><img src="/plantilla/assets/images/hotel-140x90-4.jpg" class="img-responsive" alt=""></div>
-                                <div class="item"><img src="/plantilla/assets/images/hotel-140x90-5.jpg" class="img-responsive" alt=""></div>
-                                <div class="item"><img src="/plantilla/assets/images/hotel-140x90-6.jpg" class="img-responsive" alt=""></div>
-                                <div class="item"><img src="/plantilla/assets/images/hotel-140x90-1.jpg" class="img-responsive" alt=""></div>
-                            </div>
-                            <h3>Description</h3>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its 
-                                layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                                using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web 
-                                page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web 
-                                sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                                (injected humour and the like).
-                            </p>
-                           
-
-                            <div class="separator"></div>
-                           
-                        </div>
-                       
-                    </div>
-                </div>
-            </section>
+                            <section class="hotels-details-inner">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8 col-sm-8">
+                                            <div id="sync1" class="owl-carousel">
+                                                @foreach($multimedia as $item)
+                                                <div class="item"><img src="{{$item->img}}" class="img-responsive" alt=""></div>
+                                                @endforeach
+                                            </div>
+                                            <div id="sync2" class="owl-carousel">
+                                                @foreach($multimedia as $item)
+                                                <div class="item"><img src="{{$item->img}}" class="img-responsive" alt=""></div>
+                                                 @endforeach
+                                            </div>
+                                        
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </section>
                             </div>
                     </div> 
                 </div>
@@ -452,4 +399,10 @@
      $( "#accordion" ).accordion();
  } );
   </script>
+   <script type="text/javascript">
+//AGREGAR  EL ESTILO DE UNA CLASE
+    $( ".themeUl ul" ).addClass( "list-ok" );
+    $( "#tabledisenio table" ).addClass( "table" );
+//FIN    
+ </script>
 @endsection
