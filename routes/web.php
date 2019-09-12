@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 // Route:: get('/detalle_tour1','PublicController@detalleTour1')->name('detalle_tour1');
 
+
 // Route::get('/{es?}', 'PublicController@index');
 
 
@@ -28,6 +29,10 @@ Route::get('/', function () {
 // Route::get('/contacto', 'PublicController@contacto');
 
 // Route::get('/nosotros', 'PublicController@contacto');
+Route::get('/{es?}', 'PublicController@index');
+Route::get('/contacto', 'PublicController@contacto');
+
+Route::get('/nosotros', 'PublicController@nosotros');
 
 // /*__________________inicio estañol_________________________________________________________________*/
 // Route::get('{lang?}/nosotros/', [ 'uses' => 'PublicController@about' ])->name('nosotrosEs');
@@ -83,7 +88,6 @@ Route::get('/', function () {
 // Route:: get('{es}/listar_tours/{categoria}', ['uses' => 'PublicController@tours','as' => 'listar_tours']);
 
 // Route:: get('{es}/listar_tours_categoria/{categoria?}', ['uses' => 'PublicController@toursCategoria','as' => 'listar_tours_categoria']);
-
 
 
 
