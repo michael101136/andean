@@ -19,6 +19,7 @@ Route::get('/', function () {
 Route:: get('/detalle_tour1','PublicController@detalleTour1')->name('detalle_tour1');
 
 Route::get('/{es?}', 'PublicController@index');
+Route::get('/contact', 'PublicController@contacto');
 // /*__________________inicio estañol_________________________________________________________________*/
 // Route::get('{lang?}/nosotros/', [ 'uses' => 'PublicController@about' ])->name('nosotrosEs');
 // Route::get('{lang?}/testimonio/', [ 'uses' => 'PublicController@testimony' ])->name('testimonioEs');
