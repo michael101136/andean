@@ -11,9 +11,10 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+
+Route::get('/', function () {
+    return redirect('/es');
+});
 
 Route:: get('/detalle_tour1','PublicController@detalleTour1')->name('detalle_tour1');
 
