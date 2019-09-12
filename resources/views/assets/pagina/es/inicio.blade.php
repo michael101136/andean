@@ -77,7 +77,7 @@
                                     <div class="grid-img-thumb">
                                         <!-- ribbon -->
                                         <div class="ribbon"><span>Treck</span></div>
-                                        <a href="{{URL::route('detalle_tour1') }}"><img src="{{$item->img}}" alt="1" class="img-responsive" /></a>
+                                        <a href="{{route('paquetesCategoriaES',['idioma'=> 'es','categoria'=>'cusco'])}}"><img src="{{$item->img}}" alt="1" class="img-responsive" /></a>
                                     </div>
                                     <div class="grid-content">
                                         <div class="grid-price text-right">

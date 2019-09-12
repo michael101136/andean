@@ -19,6 +19,9 @@ Route::get('/', function () {
 Route:: get('/detalle_tour1','PublicController@detalleTour1')->name('detalle_tour1');
 
 Route::get('/{es?}', 'PublicController@index');
+Route::get('{es?}/detalletour/{slug?}',['uses'=>'PublicController@detalle_tour1'])->name('detalletourEs');
+
+Auth::routes();
 // /*__________________inicio estañol_________________________________________________________________*/
 // Route::get('{lang?}/nosotros/', [ 'uses' => 'PublicController@about' ])->name('nosotrosEs');
 // Route::get('{lang?}/testimonio/', [ 'uses' => 'PublicController@testimony' ])->name('testimonioEs');
@@ -31,7 +34,7 @@ Route::get('/{es?}', 'PublicController@index');
 // Route::get('/home', 'HomeController@index')->name('home');
 
 
-// Auth::routes();
+
 
 // Route::get('/home', 'HomeController@index');
 
@@ -74,7 +77,7 @@ Route::get('/{es?}', 'PublicController@index');
 
 // Route:: get('{es}/listar_tours_categoria/{categoria?}', ['uses' => 'PublicController@toursCategoria','as' => 'listar_tours_categoria']);
 
-// Route::get('/detalletour/{slug?}',['uses'=>'PublicController@detalleTour'])->name('detalletour');
+
 
 
 // Route::resource('tipoCategoriaTours', 'TipoCategoriaTourController');
