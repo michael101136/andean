@@ -20,8 +20,7 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">Tours <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="{{route('paquete',['idioma'=> 'es','categoria'=>'aventura'])}}">Treck</a></li>
                                    
                                 </ul>
                             </li>

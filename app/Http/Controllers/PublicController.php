@@ -127,10 +127,10 @@ class PublicController extends Controller
     
      
       $idCategoria=DB::table('tipo_categoria_tours')
-      ->select('id')
-      ->where('nombre','=',$categoria)
-      ->get();
-      
+                    ->select('id')
+                    ->where('nombre','=',$categoria)
+                    ->get();
+                    
       $id=0;
 
          foreach($idCategoria as $item)
@@ -150,10 +150,8 @@ class PublicController extends Controller
           {
                 return response()->json(view("public.es.tour.categoria.categoria",compact('data'))->render());     
           }
-    
       
-        
-      return view('public.es.tour.index',['data'=>$data,'categoria'=>$categoria]);
+      return view('assets.pagina.es.tours',['data'=>$data,'categoria'=>$categoria]);
    }
 
     public function toursCategoria($es='',$categoria='')
@@ -201,14 +199,7 @@ class PublicController extends Controller
    }
    
 
-   // public function contacto()
-   // {
-   //     return view('public.es.contacto.index');
-   // }
-   // public function nosotros()
-   // {
-   //     return view('public.es.nosotros.index');
-   // }
+
 
    public function contacto($idioma='es')
    {

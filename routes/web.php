@@ -36,13 +36,15 @@ Route::get('{es?}/blog',['uses'=>'PublicController@blog'])->name('blogEs');
 Route::get('{es?}/nosotros',['uses'=>'PublicController@about'])->name('aboutEs');
 
 Route::get('{es?}/contacto',['uses'=>'PublicController@contacto'])->name('contactEs');
+Route::get('{es}/paquete/{categoria?}',['uses'=>'PublicController@tours'])->name('paquete');
+
 // Route::get('/nosotros', 'PublicController@nosotros');
 
 
 // /*__________________inicio estañol_________________________________________________________________*/
 // Route::get('{lang?}/nosotros/', [ 'uses' => 'PublicController@about' ])->name('nosotrosEs');
 // Route::get('{lang?}/testimonio/', [ 'uses' => 'PublicController@testimony' ])->name('testimonioEs');
-// Route::get('{lang?}/categoria/{search?}', [ 'uses' => 'PublicController@tours' ])->name('paquetesCategoriaES');
+
 // Route::get('{lang?}/blog/', [ 'uses' => 'PublicController@blog' ])->name('blogEs');
 // Route::get('{lang?}/contacto/', [ 'uses' => 'PublicController@contact' ])->name('contactoEs');
 // /*__________________fin español_________________________________________________________________*/

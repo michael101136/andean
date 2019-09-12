@@ -18,18 +18,11 @@
                         <div class="row">
                             <div class="col-md-3 hidden-sm thm-padding">
                                 <div class="region">
-                                    <h4 style="text-transform: uppercase;"> {{$ItempCategoria}} </h4>
+                                    <h4 style="text-transform: uppercase;"> </h4>
                                 </div>
                                
                             </div>
-                             @if(Session::has('pago'))
-                                 <div class="alert alert-success">
-                                      <strong>Gracias!</strong> 
-                                     
-                                        {{Session::get('pago')}}
-                                     
-                                </div>
-                             @endif
+                            
                              
                         </div>
                     </div>
@@ -89,15 +82,7 @@
                                     CATEGORÍA
                                 </div>
                                 <div class="facility">
-                                    @foreach($categoria as $itemp)
-                                        <div class="checkbox" onchange="tourOpcionCategoria({!! $itemp->id !!},this);">  
-                                            <label style="text-transform: uppercase;"> 
-                                                <input type="checkbox" value="chp{!! $itemp->id !!}">
-                                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                {{ $itemp->description}}
-                                            </label>
-                                        </div>
-                                   @endforeach
+                                   
                                 </div>
                             </div>
                             <!-- help center -->
@@ -111,11 +96,11 @@
                         <div class="col-sm-8 col-md-9">
                             <div class="hotel-list-content" id="idTours">
 
-                                @foreach($tours as $item)
+                                @foreach($data as $item)
                                     <div class="hotel-item">
                                         <div class="hotel-image">
-                                            <a href="{{route('detalleEsTour',['es'=>'es','tour' => $item->slug])}}">
-                                                <div class="img"><img src="/{{ $item->img}}"  alt="" class="img-responsive"></div>
+                                            <a href="{{route('detalletourEs',['es'=>'es','tour' => $item->slug])}}">
+                                                <div class="img"><img src="{{ $item->img}}"  alt="" class="img-responsive"></div>
                                             </a>
                                         </div>
                                         <div class="hotel-body">
@@ -126,10 +111,10 @@
                                                 <i class="fa fa-star-half-o"></i>
                                                 <i class="fa fa-star-o"></i>
                                             </div>
-                                            <h3> <a href="{{route('detalleEsTour',['es'=>'es','tour' => $item->slug])}}">{{ $item->name}}</a></h3>
+                                            <h3> <a href="{{route('detalletourEs',['es'=>'es','tour' => $item->slug])}}">{{ $item->nombretour}}</a></h3>
                                             <p>
                                                   
-                                                <!--{{ $item->description_short}}-->
+                                              
                                             </p>
                                             <div class="free-service">
                                                 <i class="flaticon-television" data-toggle="tooltip" data-placement="top" title="" data-original-title="Plasma TV with cable chanels"></i>
@@ -139,13 +124,13 @@
                                                 <i class="flaticon-lemonade" data-toggle="tooltip" data-placement="top" title="" data-original-title="Restaurant"></i>
                                             </div>
                                             
-                                             <a class="thm-btn" href="{{route('product.addToCart',['id' => $item->id])}}"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Agregar al carro</a>
+                                            
                                            
                                         </div>
                                          <div class="hotel-right"> 
-                                            <div class="hotel-person">  <span class="color-blue">$ {{ $item->price}} </span> </div>
-                                            <!--<a class="thm-btn" href="{{route('detalleEsTour',['es'=>'es','tour' => $item->slug])}}">MÁS DETALLE</a>-->
-                                                <a  href="{{route('detalleEsTour',['es'=>'es','tour' => $item->slug])}}" class="btn btn-warning">MÁS DETALLE</a>
+                                            <div class="hotel-person">  <span class="color-blue"> </span> </div>
+                                            
+                                                <a  href="{{route('detalletourEs',['es'=>'es','tour' => $item->slug])}}" class="btn btn-warning">MÁS DETALLE</a>
 
                                         </div>
                                     </div>
@@ -169,7 +154,7 @@
                                 <!--    <li><a href="es/categoria/aventura?page=15">15</a></li>-->
                                 <!--</ul>-->
                             <!--</div>-->
-                        {{--     {{ $tours->links() }} --}}
+                      <!--   {{--     {{ $tours->links() }} --}} -->
                         </div>
                     </div>
                 </div>
@@ -195,31 +180,7 @@
             </section> -->
         </div>
         
-         <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <div class="modal-header" style="background: #009245;color: white;text-align: center;">
-                  <button type="button" id="cerrarModal" name="cerrarModal" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Machupicchu golden </h4>
-                </div>
-                <div class="modal-body">
-                  <p style="text-align: center;">
-                      <span class="glyphicon glyphicon-ok-sign"></span><br>
-                      <h5 style="text-align: center;"> TU PRODUCTO HA SIDO AGREGADO AL CARRITO</h5>
-                  </p>
-                </div>
-                <div class="modal-footer">
-                           
-                    <a href="{{route('paquetesCategoriaES',['idioma'=> 'es','categoria'=>'cusco'])}}" class="btn btn-info">
-                       <span class="glyphicon glyphicon-chevron-left"></span> + COMPRAS
-                  </a>
-                   <a href="{{route('product.shoppingCartEs',['idioma' =>'es' ])}}" class="btn btn-info">
-                       <span class="glyphicon glyphicon-shopping-cart"></span> IR AL CARRITO
-                  </a>
-                </div>
-              </div>
-            </div>
-  </div>
+  
 
 @endsection
 
@@ -252,7 +213,7 @@
 
                 var htmlTours='';
                 $.ajax({
-                          url:'{{ route('toursOpcionPrecio') }}',
+                          url:'',
                           type: 'POST',
 
                           data:{
@@ -268,36 +229,7 @@
 
                             $.each(respuesta.data,function(index,element)
                              { 
-                                  htmlTours=htmlTours +"<div class='hotel-item'>"+
-                                                    "<div class='hotel-image'>"+
-                                                        "<a href='/es/tours/detalle/"+element.slug+"'>"+
-                                                            "<div class='img'><img src='/"+element.img+"'  alt='' class='img-responsive'></div>"+
-                                                        "</a>"+
-                                                    "</div>"+
-                                                    "<div class='hotel-body'>"+
-                                                        "<div class='ratting'>"+
-                                                            "<i class='fa fa-star'></i>"+
-                                                            "<i class='fa fa-star'></i>"+
-                                                            "<i class='fa fa-star'></i>"+
-                                                            "<i class='fa fa-star-half-o'></i>"+
-                                                            "<i class='fa fa-star-o'></i>"+
-                                                        "</div>"+
-                                                        "<h3><a href='/es/tours/detalle/"+element.slug+"'>"+element.name+"</a></h3>"+
-                                                        "<p>"+element.description_short+"</p>"+
-                                                        "<div class='free-service'>"+
-                                                            "<i class='flaticon-television' data-toggle='tooltip' data-placement='top' title='' data-original-title='Plasma TV with cable chanels'></i>"+
-                                                            "<i class='flaticon-swimmer' data-toggle='tooltip' data-placement='top' title='' data-original-title='Swimming pool'></i>"+
-                                                            "<i class='flaticon-wifi' data-toggle='tooltip' data-placement='top' title='' data-original-title='Free wifi'></i>"+
-                                                            "<i class='flaticon-weightlifting' data-toggle='tooltip' data-placement='top' title='' data-original-title='Fitness center'></i>"+
-                                                            "<i class='flaticon-lemonade' data-toggle='tooltip' data-placement='top' title='' data-original-title='Restaurant'></i>"+
-                                                        "</div>"+
-                                                         "<a class='thm-btn' href='/es/add-to-cart/"+element.id+" '><i class='fa fa-shopping-cart' aria-hidden='true'></i> Agregar al carro</a>"+
-                                                    "</div>"+
-                                                    "<div class='hotel-right'>"+
-                                                        "<div class='hotel-person'> <span class='color-blue'> $ "+element.price+" </span> </div>"+
-                                                        "<a class='btn btn-warning' href='/es/tours/detalle/"+element.slug+"'>MÁS DETALLE</a>"+
-                                                   "</div>"+
-                                                "</div>";
+                                 
                                                 
                               });
 
@@ -335,7 +267,7 @@
         $("#tours" ).html('');
         var htmlTours='';
         $.ajax({
-                 url:'{{ route('toursOpcion') }}',
+                 url:'',
                  type: 'POST',
                  data:{
                         "_token": "{{ csrf_token() }}",
@@ -352,37 +284,7 @@
 
                         $.each(respuesta.data,function(index,element)
                          { 
-                              htmlTours=htmlTours +"<div class='hotel-item'>"+
-                                                "<div class='hotel-image'>"+
-                                                    "<a href='/es/tours/detalle/"+element.slug+"'>"+
-                                                        "<div class='img'><img src='/"+element.img+"'  alt='' class='img-responsive'></div>"+
-                                                    "</a>"+
-                                                "</div>"+
-                                                "<div class='hotel-body'>"+
-                                                    "<div class='ratting'>"+
-                                                        "<i class='fa fa-star'></i>"+
-                                                        "<i class='fa fa-star'></i>"+
-                                                        "<i class='fa fa-star'></i>"+
-                                                        "<i class='fa fa-star-half-o'></i>"+
-                                                        "<i class='fa fa-star-o'></i>"+
-                                                    "</div>"+
-                                                    "<h3><a href='/es/tours/detalle/"+element.slug+"'>"+element.name+"</a></h3>"+
-                                                    "<p>"+element.description_short+"</p>"+
-                                                    "<div class='free-service'>"+
-                                                        "<i class='flaticon-television' data-toggle='tooltip' data-placement='top' title='' data-original-title='Plasma TV with cable chanels'></i>"+
-                                                        "<i class='flaticon-swimmer' data-toggle='tooltip' data-placement='top' title='' data-original-title='Swimming pool'></i>"+
-                                                        "<i class='flaticon-wifi' data-toggle='tooltip' data-placement='top' title='' data-original-title='Free wifi'></i>"+
-                                                        "<i class='flaticon-weightlifting' data-toggle='tooltip' data-placement='top' title='' data-original-title='Fitness center'></i>"+
-                                                        "<i class='flaticon-lemonade' data-toggle='tooltip' data-placement='top' title='' data-original-title='Restaurant'></i>"+
-                                                    "</div>"+
-                                                    "<a class='thm-btn' href='/es/add-to-cart/"+element.id+" '><i class='fa fa-shopping-cart' aria-hidden='true'></i> Agregar al carro</a>"+
-                                                "</div>"+
-                                                "<div class='hotel-right'>"+
-                                                    "<div class='hotel-person'> <span class='color-blue'>$ "+element.price+" </span> </div>"+
-                                                    "<a class='btn btn-warning' href='/es/tours/detalle/"+element.slug+"'>MÁS DETALLE</a>"+
-                                               "</div>"+
-                                            "</div>";
-                       
+                             
                         });
                         
                        $("#idTours ").append(htmlTours);  
@@ -410,13 +312,13 @@
                         var html='';
 	       		     $.ajax({
                                  
-                             url:'{{ route('buscarTours') }}',
+                             url:'',
                              type: 'POST',
                              data:{
                                     "_token": "{{ csrf_token() }}",
                                      "buscarTours":buscarTours,
                                      "idioma":'es',
-                                     "categoria":'{{$ItempCategoria}}',
+                                     "categoria":'',
                                      
                                 },
                              dataType: 'JSON',
