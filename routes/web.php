@@ -32,6 +32,7 @@ Route::get('/', function () {
 Route::get('/{es?}', 'PublicController@index');
 Route::get('/contacto', 'PublicController@contacto');
 Route::get('{es?}/blog',['uses'=>'PublicController@blog'])->name('blogEs');
+Route::get('{es?}/contacto',['uses'=>'PublicController@contacto'])->name('contactEs');
 Route::get('/nosotros', 'PublicController@nosotros');
 
 // /*__________________inicio estañol_________________________________________________________________*/

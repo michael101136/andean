@@ -200,9 +200,10 @@ class PublicController extends Controller
         return view('assets.pagina.'.$idioma.'.detalletour',['detalleTour'=>$detalleTour,'multimedia'=>$multimedia,'itinerario'=>$itinerario]);
    }
    
-   public function contacto()
+   public function contacto($idioma='es')
    {
-       return view('public.es.contacto.index');
+    
+      return view('assets.pagina.'.$idioma.'.contact');
    }
    public function nosotros()
    {
