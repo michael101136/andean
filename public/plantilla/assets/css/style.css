@@ -110,7 +110,7 @@ a:hover{text-decoration: none;}
 .filters-btn:hover i, .travel-title span i, .pagination-inner .pager li > a:hover, .pagination > li > a, .cats-widget ul li:hover,
 .cats-widget ul li:hover a, .popular-post-inner ul li a:hover, .checkbox-star .star i, .help-widget h4 span, .hotel-review .hotel-review-ratting,
 .booking-form .icon-addon .glyphicon, .btn-pm, .contact-icon a:hover, .contact-content a, .categoty li a:hover, .footer-menu ul li a:hover{
-    color: #fec107 !important;
+    color: #5472d2 !important;
 }
 /*red*/
 .section-title i, ul.list-ok li::before, .effect-block .package-ratting, .package-price .price, .review_rating,
@@ -668,7 +668,7 @@ blockquote .author {width: 100%;display: block;font-weight: 100;margin: 10px 0 0
 .contact-content {margin-bottom: 30px;}
 /*** 25. Footer
 ------------------------------------------------------------------------------*/
-footer {background-color: #242121;color: #fff;width: 100%;position: fixed;bottom: 0;z-index: 0;padding-top: 100px;}
+footer {background-color: #334960;color: #fff;width: 100%;position: fixed;bottom: 0;z-index: 0;padding-top: 100px;}
 footer .footer-title {margin: 0 0 30px;font-size: 20px;font-weight: 700;}
 .footer-box{padding: 0 0 70px;}
 /*address*/
