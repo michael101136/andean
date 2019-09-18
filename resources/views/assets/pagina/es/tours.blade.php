@@ -61,7 +61,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-3 col-md-5 hidden-xs text-right">
-                                        <a class="filters-btn collapse" data-toggle="collapse" href="#collapseMap"  onclick="init();"><i class="flaticon-earth-globe"></i></a>
+                                       
                                         <a href="{{route('paquete',['idioma'=> 'es','categoria'=>'aventura'])}}" class="filters-btn"><i class="flaticon-squares-gallery-grid-layout-interface-symbol"></i></a>
                                         <a href="{{route('tourlist',['idioma'=> 'es','categoria'=>'aventura'])}}" class="filters-btn"><i class="flaticon-bulleted-list"></i></a>
                                     </div>
