@@ -154,6 +154,39 @@ class PublicController extends Controller
       return view('assets.pagina.es.tours',['data'=>$data,'categoria'=>$categoria]);
    }
 
+
+   public function toursList($es='', $categoria='',Request $request)
+   {
+    
+     
+      $idCategoria=DB::table('tipo_categoria_tours')
+                    ->select('id')
+                    ->where('nombre','=',$categoria)
+                    ->get();
+                    
+      $id=0;
+
+         foreach($idCategoria as $item)
+         {
+            $id=$item->id;
+         }
+         
+        $data=db::table('tours')
+              ->select('tours.nombre as nombretour','tours.descripcion as descripciontour','tours.img','tours.slug')
+              ->join('tour_categoria','tour_categoria.tour_id','=','tours.id')
+              ->join('tipo_categoria_tours','tipo_categoria_tours.id','=','tour_categoria.categoria_id')
+              ->where('tipo_categoria_tours.id','=',$id) 
+              ->paginate(3);
+       
+       
+        if($request->ajax()) 
+          {
+                return response()->json(view("public.es.tour.categoria.categoria",compact('data'))->render());     
+          }
+      
+      return view('assets.pagina.es.toursList',['data'=>$data,'categoria'=>$categoria]);
+   }
+
     public function toursCategoria($es='',$categoria='')
     {
         $idCategoria=DB::table('tipo_categoria_tours')
@@ -178,6 +211,7 @@ class PublicController extends Controller
         return response()->json(view("public.es.tour.categoria.categoria",compact('data'))->render());     
          
     }
+
    public function detalleTour($idioma,$slug)
    {
         

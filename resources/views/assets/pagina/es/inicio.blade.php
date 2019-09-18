@@ -26,6 +26,7 @@
         </hgroup>
         <button class="btn btn-hero btn-lg" role="button" style="
         cursor: pointer">See all features</button>
+                <!-- <div style="background: rgba(26, 62, 142, 0.7);  margin-left:-1200px; margin-top:80px;">HOLA</div> -->
       </div>
     </div>
     <div class="item slides">
@@ -54,6 +55,12 @@
         cursor: pointer">See all features</button>
       </div>
     </div>
+    <div style="color: white;
+            background-color: rgba(0,0,0,.5);
+            border-bottom-right-radius: 20px;
+            padding: 30px; height: 100px; font-family: 'Oswald',  sans-serif; margin-top:-170px;position: absolute;">CUSCO AVENTURERO 7 DÍAS Y 6 NOCHES BY CAR
+        </div>
+
   </div> 
 </div>
 
@@ -163,52 +170,47 @@
                 </div>
             </section>
 
-            <section class="popular-inner">
+
+                    <section class="destination" >
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
                             <div class="title">
-                                <h2>Popular Tours</h2>
-                                <p>Most Popular Tours in the World</p>
+                                <h2>Popular tours</h2>
+                                <p>This is Amazing Travel Agency !</p>
                             </div>
                         </div>
                     </div>
                     <div class="row thm-margin">
-                        <div id="popular-slide" class="owl-carousel">
-                             @foreach($dataTreck as $item)
-                            <div class="item">
-                                <div class="grid-item-inner">
-                                    <div class="grid-img-thumb">
-                                        <!-- ribbon -->
-                                        <div class="ribbon"><span>Popular</span></div>
-                                        <a href="#"><img src="{{$item->img}}" alt="1" class="img-responsive" /></a>
+                         @foreach($dataTreck as $item)
+                            <div class="col-md-3 col-sm-4 hidden-sm thm-padding">
+                                <div class="destination-grid">
+                                    <a href="#"><img src="{{$item->img}}" class="img-responsive" alt=""></a>
+                                    <div class="mask">
+                                        <h2>London</h2>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                                        <!-- <a href="#" class="thm-btn">Read More</a> -->
                                     </div>
-                                    <div class="grid-content">
-                                        <div class="grid-price text-right">
-                                            Only <span><sub>$</sub>789</span>
-                                        </div>
-                                        <div class="grid-text">
-                                            <div class="place-name">Historic Buildings</div>
-                                            <div class="travel-times">
-                                                <h4 class="pull-left">3 days 2 nights </h4>
-                                                <span class="pull-right">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </span>
-                                            </div>
-                                        </div>
+                                    <div class="dest-name">
+                                        <h5>Hop on Hop off Bus Tour</h5>
+                                        <h4>London</h4>
+                                    </div>
+                                    <div class="dest-icon">
+                                        <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
+                                        <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
+                                        <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
+                                        <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
                                     </div>
                                 </div>
-                             
                             </div>
-                            @endforeach
-                        </div>
+                        @endforeach
+
                     </div>
                 </div>
             </section>
+
+
+      
 
 <!-- Testimonial section -->
             <div class="reference home-ref">
@@ -271,7 +273,7 @@
 <br/><br/><br/>
 
               <!-- Counter -->
-            <section class="counter-inner">
+       <!--      <section class="counter-inner">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-3">
@@ -320,7 +322,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
            
             <section class="package">
@@ -374,44 +376,53 @@
             </section>
 
             <!-- destination -->
-            <section class="destination" style="margin-top: -97px;">
+    
+                  <section class="popular-inner">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
                             <div class="title">
                                 <h2>Blog</h2>
-                                <p>This is Amazing Travel Agency !</p>
+                                <p>Most Popular Tours in the World</p>
                             </div>
                         </div>
                     </div>
                     <div class="row thm-margin">
-                         @foreach($dataTreck as $item)
-                            <div class="col-md-3 col-sm-4 hidden-sm thm-padding">
-                                <div class="destination-grid">
-                                    <a href="#"><img src="{{$item->img}}" class="img-responsive" alt=""></a>
-                                    <div class="mask">
-                                        <h2>London</h2>
-                                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
-                                        <a href="#" class="thm-btn">Read More</a>
+                        <div id="popular-slide" class="owl-carousel">
+                             @foreach($dataTreck as $item)
+                            <div class="item">
+                                <div class="grid-item-inner">
+                                    <div class="grid-img-thumb">
+                                        <!-- ribbon -->
+                                        <div class="ribbon"><span>Popular</span></div>
+                                        <a href="#"><img src="{{$item->img}}" alt="1" class="img-responsive" /></a>
                                     </div>
-                                    <div class="dest-name">
-                                        <h5>Hop on Hop off Bus Tour</h5>
-                                        <h4>London</h4>
-                                    </div>
-                                    <div class="dest-icon">
-                                        <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
-                                        <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
-                                        <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
-                                        <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
+                                    <div class="grid-content">
+                                        <div class="grid-price text-right">
+                                            Only <span><sub>$</sub>789</span>
+                                        </div>
+                                        <div class="grid-text">
+                                            <div class="place-name">Historic Buildings</div>
+                                            <div class="travel-times">
+                                                <h4 class="pull-left">3 days 2 nights </h4>
+                                                <span class="pull-right">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                             
                             </div>
-                        @endforeach
-
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </section>
-            
            
           
 
