@@ -32,8 +32,33 @@ En la cuenca amazónica de Perú, nuestro albergue ecológico Tambopata está si
                         </div>
                     </div>
                 </div>
+
+                     <div class="about-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-offset-2 col-md-8">
+                                <div class="section-title text-center">
+                                    <h2>Responsabilidad social</h2>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="about-title">
+                                  
+
+                                    <p style="text-align: justify;">
+                                        Somos operadores oficiales del Camino Inca a Machu Picchu bajo las pautas del gobierno peruano diseñadas para administrar de manera sostenible el Santuario Histórico de Machu Picchu y proteger los derechos de los porteros indígenas.
+
+En la cuenca amazónica de Perú, nuestro albergue ecológico Tambopata está situado en los bosques tropicales de las tierras bajas de la Reserva Nacional Tambopata, donde ofrecemos alojamiento en cabañas de selva tropical estándar del hotel y excursiones guiadas a áreas naturales protegidas de diversidad biológica sin igual.
+                                    </p>
+                                   
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
-                 <div class="team-inner">
+               <!--  <div class="team-inner">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-offset-2 col-md-8">
@@ -123,7 +148,7 @@ En la cuenca amazónica de Perú, nuestro albergue ecológico Tambopata está si
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
            
         </div>

@@ -22,7 +22,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <!-- Address -->
+                   
                     <div class="col-sm-4 col-md-3">
                         <div class="footer-box address-inner">
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has

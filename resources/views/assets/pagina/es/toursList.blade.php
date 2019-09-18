@@ -8,14 +8,14 @@
                         <div class="col-md-8 col-md-offset-2">
                             <div class="header-content">
                                 <div class="header-content-inner">
-                                    <h1>Paris Hotels</h1>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    <h1>Tours List</h1>
+                                <!--     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                                         standard dummy text ever since </p>
                                     <div class="ui breadcrumb">
                                         <a href="index.html" class="section">Home</a>
                                         <div class="divider"> / </div>
                                         <div class="active section">Hotel Grid</div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -63,8 +63,8 @@
                                     </div>
                                     <div class="col-sm-3 col-md-5 hidden-xs text-right">
                                         <a class="filters-btn collapse" data-toggle="collapse" href="#collapseMap"  onclick="init();"><i class="flaticon-earth-globe"></i></a>
-                                        <a href="hotels-grid.html" class="filters-btn"><i class="flaticon-squares-gallery-grid-layout-interface-symbol"></i></a>
-                                        <a href="hotels-list.html" class="filters-btn"><i class="flaticon-bulleted-list"></i></a>
+                                        <a href="{{route('paquete',['idioma'=> 'es','categoria'=>'aventura'])}}" class="filters-btn"><i class="flaticon-squares-gallery-grid-layout-interface-symbol"></i></a>
+                                        <a href="{{route('tourlist',['idioma'=> 'es','categoria'=>'aventura'])}}" class="filters-btn"><i class="flaticon-bulleted-list"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -77,63 +77,37 @@
                             </div>
                         </div>
                         <!-- sideber -->
-                        <div class="col-sm-6 col-md-6">
+                        @foreach($data as $item)
+                            <div class="col-sm-6 col-md-6">
                           <div class="hotel-list-content">
                                  <div class="hotel-item">
                                     <!-- hotel Image-->
                                     <div class="hotel-image">
                                         <a href="#">
-                                            <div class="img"><img src="assets/images/hotel-7.jpg"  alt="" class="img-responsive"></div>
+                                            <div class="img"><img src="{{ $item->img}}"  alt="" class="img-responsive"></div>
                                         </a>
                                     </div>
                                     <!-- hotel body-->
                                     <div class="hotel-body">
                                       
                                         <!-- title-->
-                                        <h3>Tours in Greece</h3>
+                                        <h3></h3>
                                         <!-- Text Intro-->
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
                                             standard dummy text ever since the 1500s, when an unknown</p>
-                                     <a class="thm-btn" href="#">Details</a>
+                                     <a class="thm-btn" href="{{route('detalletourEs',['es'=>'es','tour' => $item->slug])}}">Details</a>
                                     </div>
-                                    
+
                                    <!--  <div class="hotel-right"> 
                                         <div class="hotel-person">from <span class="color-blue">$273</span> person</div>
                                         <a class="thm-btn" href="#">Details</a>
                                     </div> -->
                                 </div>
-                          </div>
-                        
-                        </div>
-                        <div class="col-sm-6 col-md-6">
-                            <div class="hotel-list-content">
-                                <div class="hotel-item">
-                                    <!-- hotel Image-->
-                                    <div class="hotel-image">
-                                        <a href="#">
-                                            <div class="img"><img src="assets/images/hotel-7.jpg"  alt="" class="img-responsive"></div>
-                                        </a>
-                                    </div>
-                                    <!-- hotel body-->
-                                    <div class="hotel-body">
-                                  
-                                        <!-- title-->
-                                        <h3>Tours in Greece</h3>
-                                        <!-- Text Intro-->
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-                                            standard dummy text ever since the 1500s, when an unknown</p>
-                                                      <a class="thm-btn" href="#">Details</a>
-                                    </div>
-                                 <!--    <div class="hotel-right"> 
-                                        <div class="hotel-person">from <span class="color-blue">$273</span> person</div>
-                                        <a class="thm-btn" href="#">Details</a>
-                                    </div> -->
-                                </div>
-
+                          </div>                        
                             </div>
-                            <!-- pagination -->
-                         
-                        </div>
+                        @endforeach
+
+                        
                     </div>
                 </div>
             </section>
