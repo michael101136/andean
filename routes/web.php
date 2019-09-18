@@ -57,34 +57,34 @@ Route::get('{es}/paquete/{categoria?}',['uses'=>'PublicController@tours'])->name
 
 // Route::get('/home', 'HomeController@index');
 
-// Route::resource('tipoAlojamientos', 'TipoAlojamientoController');
+Route::resource('tipoAlojamientos', 'TipoAlojamientoController');
+Route::resource('categoriaAlojamientos', 'CategoriaAlojamientoController');
+Route::resource('tipoHabitacions', 'tipo_habitacionController');
+Route::resource('alojamientos', 'alojamientoController');
+Route::resource('ubigeos', 'UbigeoController');
 
-// Route::resource('categoriaAlojamientos', 'CategoriaAlojamientoController');
+Route::resource('multimedia', 'multimediaController');
 
-// Route::resource('tipoHabitacions', 'tipo_habitacionController');
+Route:: POST('/saveContenidoMultimedia', 
+[
+	'uses' => 'multimediaController@saveContenidoMultimedia',
+	'as' => 'multimedia.contenidoMultimedia'
+]);
 
-// Route::resource('alojamientos', 'alojamientoController');
-// Route::resource('ubigeos', 'UbigeoController');
-
-// Route::resource('multimedia', 'multimediaController');
-// Route:: POST('/saveContenidoMultimedia', 
-// [
-// 	'uses' => 'multimediaController@saveContenidoMultimedia',
-// 	'as' => 'multimedia.contenidoMultimedia'
-// ]);
-// Route:: POST('/images-multimedia', 
-// [
-// 	'uses' => 'multimediaController@storeImagen',
-// 	'as' => 'multimedia.storeImagen'
-// ]);
-// Route::resource('imagen','ImageController');
-// Route::get('image/listar/{id?}', [ 'uses' => 'ImageController@listarImagenes' ])->name('listarImagenes');
-// Route::get('image/delete/{id?}',[ 'uses' => 'ImageController@delete_img' ])->name('EliminarImagenes');
+Route:: POST('/images-multimedia', 
+[
+	'uses' => 'multimediaController@storeImagen',
+	'as' => 'multimedia.storeImagen'
+]);
 
 
-// Route::resource('languages', 'languagesController');
+Route::resource('imagen','ImageController');
+Route::get('image/listar/{id?}', [ 'uses' => 'ImageController@listarImagenes' ])->name('listarImagenes');
+Route::get('image/delete/{id?}',[ 'uses' => 'ImageController@delete_img' ])->name('EliminarImagenes');
 
-// Route::resource('paises', 'paisesController');
+
+Route::resource('languages', 'languagesController');
+Route::resource('paises', 'paisesController');
 
 
 
@@ -98,9 +98,9 @@ Route::get('{es}/paquete/{categoria?}',['uses'=>'PublicController@tours'])->name
 
 
 
-// Route::resource('tipoCategoriaTours', 'TipoCategoriaTourController');
+Route::resource('tipoCategoriaTours', 'TipoCategoriaTourController');
 
-// Route::resource('tours', 'toursController');
+Route::resource('tours', 'toursController');
 // Route:: POST('/tours_save', 
 // [
 // 	'uses' => 'toursController@storeTours',
@@ -113,24 +113,24 @@ Route::get('{es}/paquete/{categoria?}',['uses'=>'PublicController@tours'])->name
 // 	'as' => 'blog.cambioImagenTours'
 // ]);
 
-// Route::resource('itinerarios', 'itinerariosController');
+Route::resource('itinerarios', 'itinerariosController');
 
-// Route::get('tourItinerario/{id?}','itinerariosController@tourItinerarioShow')->name('tourItinerario');
+Route::get('tourItinerario/{id?}','itinerariosController@tourItinerarioShow')->name('tourItinerario');
 
-// Route::get('tourItinerarioCreate/{id?}','itinerariosController@tourItinerarioCreate')->name('tourItinerarioCreate');
+Route::get('tourItinerarioCreate/{id?}','itinerariosController@tourItinerarioCreate')->name('tourItinerarioCreate');
 
-// Route::resource('userControllers', 'userControllerController');
+Route::resource('userControllers', 'userControllerController');
 
-// Route::resource('categoriaBlogs', 'CategoriaBlogController');
+Route::resource('categoriaBlogs', 'CategoriaBlogController');
 
-// Route::resource('blogs', 'BlogController');
+Route::resource('blogs', 'BlogController');
 
-// Route::get('/blog','PublicController@blog');
-// Route:: get('/listar_blog', 
-// [
-// 	'uses' => 'PublicController@blog',
-// 	'as' => 'listar_blog'
-// ]);
+Route::get('/blog','PublicController@blog');
+Route:: get('/listar_blog', 
+[
+	'uses' => 'PublicController@blog',
+	'as' => 'listar_blog'
+]);
 
 // Route:: get('/listar_categoria_blog/{categoria?}', 
 // [
@@ -151,23 +151,23 @@ Route::get('{es}/paquete/{categoria?}',['uses'=>'PublicController@tours'])->name
 // Route::post('/images-delete', 'BlogController@destroyImagen');
 // Route::get('/images-show', 'BlogController@indexImagen');
 
-// Route:: POST('/images-save', 
-// [
-// 	'uses' => 'BlogController@storeImagen',
-// 	'as' => 'blog.save'
-// ]);
+Route:: POST('/images-save', 
+[
+	'uses' => 'BlogController@storeImagen',
+	'as' => 'blog.save'
+]);
 
-// Route:: POST('/saveContenidoBlog', 
-// [
-// 	'uses' => 'BlogController@saveContenidoBlog',
-// 	'as' => 'blog.contenido'
-// ]);
+Route:: POST('/saveContenidoBlog', 
+[
+	'uses' => 'BlogController@saveContenidoBlog',
+	'as' => 'blog.contenido'
+]);
 
-// Route:: POST('/saveCambioImagenBlog', 
-// [
-// 	'uses' => 'BlogController@saveCambioImagenBlog',
-// 	'as' => 'blog.cambioImagen'
-// ]);
+Route:: POST('/saveCambioImagenBlog', 
+[
+	'uses' => 'BlogController@saveCambioImagenBlog',
+	'as' => 'blog.cambioImagen'
+]);
 
 // Route::get('/contacto', 'PublicController@contacto');
 

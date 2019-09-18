@@ -31,7 +31,7 @@
 
                         </ul>
                         <ul class="nav navbar-nav navbar-right hidden-sm">
-                            <li><a class="nav-btn" href="#"><div class="thm-btn">Cotizar</div></a></li>
+                            <li><a class="nav-btn" href="{{route('contactEs',['es'=>'es'])}}"><div class="thm-btn">Cotizar</div></a></li>
                         </ul>
                     </div> <!-- /.navbar-collapse --> 
                 </div> <!-- /.container --> 
