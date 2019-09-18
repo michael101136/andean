@@ -69,7 +69,7 @@
             <div  class="navbar-default tour-nav">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-8">
                             <ul class="nav navbar-nav text-center">
                                 <li><a class="page-scroll" href="#overview">Inicio</a></li>
                                 <li><a class="page-scroll" href="#experience">Programa</a></li>

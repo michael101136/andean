@@ -10,7 +10,7 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="header-content">
-                                <div class="header-content-inner">
+                                <div class="header-content-inner" style="margin-top: 100px;">
                                     <h1>CONTACTO</h1>
                                 
                                 </div>
@@ -81,16 +81,15 @@
                                 <div class="contact-content">
                                     <h4>DIRECCIÓN</h4>
                                     <p>
-                                        Av. 28 de Julio Mz. R-2
-                                        Oficina 201 - Cusco
+                                        Urb. Lucrepata E-13, Cusco, Peru
                                     </p>
                                 </div>
                                 <div class="contact-content">
                                     <h4>CORREO ELECTRÓNICO</h4>
                                     <p>
-                                        <a href="reservas@machupicchugolden.com">reservas@machupicchugolden.com</a>
-                                        <a href="info@machupicchugolden.com">info@machupicchugolden.com</a>
-                                        <a href="ventas@machupicchugolden.com">ventas@machupicchugolden.com </a>   
+                                        <a href="sales@andeanadventuresperu.com">   sales@andeanadventuresperu.com</a>
+                                        <!-- <a href="info@machupicchugolden.com">info@machupicchugolden.com</a>
+                                        <a href="ventas@machupicchugolden.com">ventas@machupicchugolden.com </a>    -->
                                     </p>
                                 </div>
                                 
@@ -99,10 +98,9 @@
                                     <p>
                                         
                                   
-                                    <SMALL> <b>TELÉFONO : </b> 0051 084 584 272</SMALL><br/>
-                                    <SMALL> <b>MOVISTAR : </b> +051 984 987 798</SMALL><br/>
-                                    <SMALL> <b> CLARO : </b> +051 982 505 892</SMALL><br/>
-                                    <SMALL> <b> ENTEL : </b> 0051 084 584 272</SMALL><br/>
+                                    <SMALL> <b>TELÉFONO : </b>  (+51 84) 229911 / (+51 84) 263498</SMALL><br/>
+                                    <SMALL> <b>MOVISTAR : </b>  +51 984 948 057</SMALL><br/>
+                                    
 
                                     </p>
                                 </div>

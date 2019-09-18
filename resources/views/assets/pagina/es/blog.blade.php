@@ -167,7 +167,7 @@
                         </div>
                         <!-- sideber -->
                         <div class="col-md-4 col-sm-4">
-                            <div class="sidber-box cats-widget">
+                            <!-- <div class="sidber-box cats-widget">
                                 <div class="cats-title">
                                     CATEGORIAS
                                 </div>
@@ -177,7 +177,7 @@
                                     <li><a href="#">Tradiconal</a> <span>32</span></li>
                                 
                                 </ul>
-                            </div>
+                            </div> -->
                           
                             <!-- tags -->
                             <div class="sidber-box tags-widget">

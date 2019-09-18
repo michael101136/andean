@@ -37,6 +37,7 @@ Route::get('{es?}/nosotros',['uses'=>'PublicController@about'])->name('aboutEs')
 
 Route::get('{es?}/contacto',['uses'=>'PublicController@contacto'])->name('contactEs');
 Route::get('{es}/paquete/{categoria?}',['uses'=>'PublicController@tours'])->name('paquete');
+Route::get('{es}/tourlist/{categoria?}',['uses'=>'PublicController@toursList'])->name('tourlist');
 
 // Route::get('/nosotros', 'PublicController@nosotros');
 
