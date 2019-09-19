@@ -128,6 +128,7 @@
 
 
         <!-- range slider -->
+        {!!Html::script('plantilla/slider/js/jssor.slider-27.5.0.min.js')!!}
         {!!Html::script('plantilla/assets/js/jquery.min.js')!!}
         {!!Html::script('plantilla/assets/js/jquery-ui.min.js')!!}
         {!!Html::script('plantilla/assets/js/bootstrap.min.js')!!}

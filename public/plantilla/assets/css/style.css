@@ -591,7 +591,7 @@ ul.list-ok li::before {font-style: normal;font-weight: 700;font-family: icon_set
 .article p {font-size: 15px;line-height: 27px;}
 .customers {font-size: 14px;line-height: 25px;color: rgb(34, 34, 34);text-transform: uppercase;}
 .customers span {font-size: 13px;line-height: 25px;text-transform: none;font-weight: 400;}
-.separator{height: 4px;width: 100%;margin: 50px auto;background: #fec107;}
+.separator{height: 4px;width: 100%;margin: 50px auto;background: #5472d2;}
 /*Comment form*/
 .comment-form .form-group, .contact-form .form-group{margin-bottom: 20px}
 .comment-form .form-control, .contact-form .form-control, .booking-form .form-control{box-shadow: none; border-radius: 0;border: 2px solid rgba(0,0,0,.1);height: 50px;font-size: 13px;}
