@@ -3,8 +3,22 @@
 @section('content')
  
 
+            <section class="header header-bg-10" style="margin-top: -200px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="header-content">
+                                <div class="header-content-inner" style="margin-top: 100px;">
+                                    <h1>NOSOTROS</h1>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-     <img src="https://www.nanmagazine.com/wp-content/uploads/2018/08/Wanderbus_06.jpg">
+   <!--   <img src="https://www.nanmagazine.com/wp-content/uploads/2018/08/Wanderbus_06.jpg"> -->
    <!-- about section -->
             <section class="about-section">
                 <!-- about section -->

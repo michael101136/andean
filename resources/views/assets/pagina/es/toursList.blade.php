@@ -2,20 +2,16 @@
 
 @section('content')
  
-     <section class="header header-bg-4">
+
+
+            <section class="header header-bg-10" style="margin-top: -200px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="header-content">
-                                <div class="header-content-inner">
-                                    <h1>Tours List</h1>
-                                <!--     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                        standard dummy text ever since </p>
-                                    <div class="ui breadcrumb">
-                                        <a href="index.html" class="section">Home</a>
-                                        <div class="divider"> / </div>
-                                        <div class="active section">Hotel Grid</div>
-                                    </div> -->
+                                <div class="header-content-inner" style="margin-top: 100px;">
+                                    <h1>TOURS LIST</h1>
+                                
                                 </div>
                             </div>
                         </div>

@@ -115,7 +115,7 @@
   
      
             <!-- blog --><br><br>
-            <section class="blog-wrapper" style="margin-top: -85px;
+            <section class="blog-wrapper" style="margin-top: -75px;
 ">
                 <div class="container">
                     <div class="row">
