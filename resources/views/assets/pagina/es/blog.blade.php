@@ -24,7 +24,7 @@
 
 </style>
 
-
+<!-- 
             <section class="header header-bg-10" style="margin-top: -200px;">
                 <div class="container">
                     <div class="row">
@@ -38,9 +38,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
-            <br/>        <br/>       
+            <br/><br/><br/><br/> <br/><br/>     
 
    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
