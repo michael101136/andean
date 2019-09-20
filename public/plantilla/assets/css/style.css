@@ -221,9 +221,9 @@ a:hover{text-decoration: none;}
 .header-bg-6{background-image: url(../images/header-1920x1135-6.jpg);}
 .header-bg-7{background-image: url(../images/header-1920x1135-7.jpg);}
 .header-bg-8{background-image: url(../images/header-1920x1135-8.jpg);}
-.header-bg-9{background-image: url(../images/header-1920x1135-9.jpg);}
+/*.header-bg-9{background-image: url(../images/header-1920x1135-9.jpg);}*/
 .header-bg-10{background-image: url(../images/header-1920x1135-10.jpg);}
-.header:before {content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.5);}
+.header:before {content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
 .header-content {text-align: center;padding: 115px 0 60px;position: relative;}
 .header-content-inner {position: relative;margin: 0 auto;}
 .header-content-inner h1 {text-transform: uppercase;font-weight: 800;letter-spacing: 1px;margin: 50px 0 20px;}

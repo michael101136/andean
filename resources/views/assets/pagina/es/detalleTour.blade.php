@@ -37,7 +37,7 @@
 
         /*jssor slider thumbnail skin 101 css*/
         .jssort101 .p {position: absolute;top:0;left:0;box-sizing:border-box;background:#000;}
-        .jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box;z-index:1;}
+        .jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;box-sizing:border-box;z-index:1;}
         .jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
         .jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
         .jssort101 .p:hover{padding:2px;}
@@ -51,6 +51,7 @@
 
 </style>
 
+<br/><br/><br/><br/><br/>
 <section id="overview" class="header header-bg-9">
  <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
@@ -130,58 +131,7 @@
     </div>
 </section>
  
-     <!--     <section id="overview" class="header header-bg-9">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="header-content">
-                                <div class="header-content-inner">
-                                    <div class="toure-title">
-                                        <i class="fa fa-eye"></i>
-                                        <h1>{{$detalleTour->nombre}}</h1>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-6 col-sm-2">
-                                            <div class="trip">
-                                              
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-2">
-                                            <div class="trip">
-                                               
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-2">
-                                            <div class="trip">
-                                                <i class="flaticon-night"></i>
-                                                <h5>Nights</h5>
-                                                <p>9 Days / 8 Nights</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-2">
-                                            <div class="trip">
-                                                <i class="flaticon-road-perspective-of-curves"></i>
-                                                <h5>PYGMY MILES</h5>
-                                                <p>6,295km</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-2">
-                                            <div class="trip">
-                                               
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-2">
-                                            <div class="trip">
-                                               
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
+  
             <div  class="navbar-default tour-nav">
                 <div class="container">
                     <div class="row">
@@ -591,8 +541,8 @@
             var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
             /*#region responsive code begin*/
-            var MAX_WIDTH = 1350;
-
+            var MAX_WIDTH = 1150;
+        
 
             function ScaleSlider() {
                 var containerElement = jssor_1_slider.$Elmt.parentNode;
