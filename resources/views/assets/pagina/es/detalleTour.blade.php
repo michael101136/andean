@@ -51,7 +51,6 @@
 
 </style>
 
-<br/><br/><br/><br/><br/>
 <section id="overview" class="header header-bg-9">
  <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
@@ -541,7 +540,7 @@
             var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
             /*#region responsive code begin*/
-            var MAX_WIDTH = 1150;
+            var MAX_WIDTH = 1350;
         
 
             function ScaleSlider() {
