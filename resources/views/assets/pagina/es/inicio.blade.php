@@ -91,19 +91,19 @@
 
                                     <div class="grid-content">
                                         <div class="grid-price text-right">
-                                            Only <span><sub>$</sub>991</span>
+                                            Name <span><!-- <sub>$</sub>991 --></span>
                                         </div>
                                         <div class="grid-text">
                                           
                                             <div class="travel-times">
                                                 <h4 class="pull-left">3 days 2 nights </h4>
-                                                <span class="pull-right">
+                                               <!--  <span class="pull-right">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
-                                                </span>
+                                                </span> -->
                                             </div>
                                         </div>
                                     </div>
@@ -346,26 +346,26 @@
                                         <figcaption>
                                             <div class="effect-block">
                                                 <h3>{{$item->nombretour}}</h3>
-                                                <div class="package-ratting">
+                                                <!-- <div class="package-ratting">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star-half-o"></i>
                                                     <i class="fa fa-star-o"></i>
-                                                </div>
-                                                <button type="button" class="thm-btn">Explore Now</button>
+                                                </div> -->
+                                                <button type="button" class="thm-btn">Ver más</button>
                                             </div>
                                         </figcaption>
                                     </figure>
                                 </div>
                                 <div class="package-content">
-                                    <h5>Giza Necropolis, Egypt</h5>
-                                    <div class="package-price">from
+                                    <h5>{{$item->nombretour}}</h5>
+                                 <!--    <div class="package-price">from
                                         <span class="price">
                                             <span class="amount">$200.00</span>
                                         </span>
                                         /night
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>

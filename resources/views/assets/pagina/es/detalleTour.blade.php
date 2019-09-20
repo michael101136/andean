@@ -100,7 +100,7 @@
             </div>
         </div>
         <!-- Thumbnail Navigator -->
-        <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">
+        <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#263457" data-autocenter="1" data-scale-bottom="0.75">
             <div data-u="slides">
                 <div data-u="prototype" class="p" style="width:190px;height:90px;">
                     <div data-u="thumbnailtemplate" class="t"></div>
@@ -426,7 +426,8 @@
                     </div>
                 </section>
                 <!-- gallety -->
-                <div id="tour-gallery">
+
+                  <div id="tour-gallery">
                     <div class="container">
                         <div class="row">
                             <!-- section title -->
@@ -434,35 +435,105 @@
                                 <div class="section-title text-center">
                                     <i class="flaticon-sidebar"></i>
                                     <h2>GALLERY</h2>
-                                    
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                                 </div>
                             </div>
-                            
                         </div>
-                        <div class="col-sm-8">
-                            <section class="hotels-details-inner">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-8 col-sm-8">
-                                            <div id="sync1" class="owl-carousel">
-                                                @foreach($multimedia as $item)
-                                                <div class="item"><img src="{{$item->img}}" class="img-responsive" alt=""></div>
-                                                @endforeach
-                                            </div>
-                                            <div id="sync2" class="owl-carousel">
-                                                @foreach($multimedia as $item)
-                                                <div class="item"><img src="{{$item->img}}" class="img-responsive" alt=""></div>
-                                                 @endforeach
-                                            </div>
-                                        
+                        <div class="row gallery-margin">
+                            <div class="portfolio-items list-unstyled zoom-gallery" id="grid">
+                               
+                             
+                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
+                                    <div class="img-thumb">
+                                        <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.jpg">
+                                            <img src="/plantilla/assets/images/gallery-276x525-3.jpg" class="img-responsive" alt="">
+                                        </a>
+                                        <div class="gallery-hover">
+                                            <a class="plus-link dfd-top-right" href="#">
+                                                <span class="plus-link-container">
+                                                    <span class="plus-link-out"></span>
+                                                    <span class="plus-link-come"></span>
+                                                </span>
+                                            </a>
                                         </div>
-                                       
                                     </div>
                                 </div>
-                            </section>
+            
+                                <div class="col-md-6 col-sm-6 col-xs-12 gallery-padding">
+                                    <div class="img-thumb">
+                                        <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.jpg">
+                                            <img src="/plantilla/assets/images/gallery-560x250-5.jpg" class="img-responsive" alt="">
+                                        </a>
+                                        <div class="gallery-hover">
+                                            <a class="plus-link dfd-top-right" href="#">
+                                                <span class="plus-link-container">
+                                                    <span class="plus-link-out"></span>
+                                                    <span class="plus-link-come"></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
+                                    <div class="img-thumb">
+                                        <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.jpg">
+                                            <img src="/plantilla/assets/images/gallery-276x255-6.jpg" class="img-responsive" alt="">
+                                        </a>
+                                        <div class="gallery-hover">
+                                            <a class="plus-link dfd-top-right" href="#">
+                                                <span class="plus-link-container">
+                                                    <span class="plus-link-out"></span>
+                                                    <span class="plus-link-come"></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                               
+                                <!-- sizer -->
+                                <div class="col-md-3 col-sm-3 col-xs-12 shuffle_sizer"></div>
                             </div>
+                        </div>
                     </div> 
                 </div>
+                    <!-- <div id="tour-gallery">
+                        <div class="container">
+                            <div class="row">
+                             
+                                <div class="col-md-offset-2 col-md-4">
+                                    <div class="section-title text-center">
+                                        <i class="flaticon-sidebar"></i>
+                                        <h2>GALLERY</h2>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-sm-8">
+                                <section class="hotels-details-inner">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-8">
+                                                <div id="sync1" class="owl-carousel">
+                                                    @foreach($multimedia as $item)
+                                                    <div class="item"><img src="{{$item->img}}" class="img-responsive" alt=""></div>
+                                                    @endforeach
+                                                </div>
+                                                <div id="sync2" class="owl-carousel">
+                                                    @foreach($multimedia as $item)
+                                                    <div class="item"><img src="{{$item->img}}" class="img-responsive" alt=""></div>
+                                                     @endforeach
+                                                </div>
+                                            
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </section>
+                                </div>
+                        </div> 
+                    </div> -->
             </main>
             <!-- Newsletter -->
        
