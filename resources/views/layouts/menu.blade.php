@@ -65,12 +65,7 @@
         <li class="{{ Request::is('tours*') ? 'active' : '' }}">
             <a href="{!! route('tours.index') !!}"><i class="fa fa-edit"></i><span>Tours</span></a>
         </li>
-        <!-- 
-        <li class="{{ Request::is('itinerarios*') ? 'active' : '' }}">
-            <a href="{!! route('itinerarios.index') !!}"><i class="fa fa-edit"></i><span>Itinerarios</span></a>
-        </li> -->
-
-    
+       
 
        <li class="treeview">
                   <a href="#">

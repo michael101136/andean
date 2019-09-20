@@ -8,7 +8,7 @@
                         <div class="col-md-8 col-md-offset-2">
                             <div class="header-content">
                                 <div class="header-content-inner" style="margin-top: 100px;">
-                                    <h1>TOURS</h1>
+                                    <h1>{{$nameCategoria}}</h1>
                                 
                                 </div>
                             </div>

@@ -25,9 +25,9 @@
                                    
                                 </ul>
                             </li> -->
-                            <li><a href="{{route('blogEs',['es'=>'es'])}}">Inca Rail</a></li>
-                            <li><a href="{{route('blogEs',['es'=>'es'])}}">Treck & Bikes</a></li>
-                            <li><a href="{{route('paquete',['idioma'=> 'es','categoria'=>'aventura'])}}">Tours</a></li>
+                            <li><a href="{{route('paquete',['idioma'=> 'es','categoria'=>'inca-rail'])}}">Inca Rail</a></li>
+                            <li><a href="{{route('paquete',['idioma'=> 'es','categoria'=>'treck-&-bikes'])}}">Treck & Bikes</a></li>
+                            <li><a href="{{route('paquete',['idioma'=> 'es','categoria'=>'tours'])}}">Tours</a></li>
                             <li><a href="{{route('aboutEs',['es'=>'es'])}}">Amazon</a></li>
                             <li><a href="{{route('aboutEs',['es'=>'es'])}}">Nosotros</a></li>
                             <li><a href="{{route('blogEs',['es'=>'es'])}}">Blog</a></li>

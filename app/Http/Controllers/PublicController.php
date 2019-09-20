@@ -96,6 +96,7 @@ class PublicController extends Controller
    public function blogPorCategoria($categoria='',Request $request)
    {
    
+      
       //Obtener el id de la categoria por nombre
       $idCategoria=DB::table('categoria_blogs')
                         ->select('id')
@@ -125,10 +126,11 @@ class PublicController extends Controller
    public function tours($es='', $categoria='',Request $request)
    {
     
-     
+    
+      $nameCategoria=str_replace("-", " ", $categoria);
       $idCategoria=DB::table('tipo_categoria_tours')
                     ->select('id')
-                    ->where('nombre','=',$categoria)
+                    ->where('slug','=',$categoria)
                     ->get();
                     
       $id=0;
@@ -138,12 +140,24 @@ class PublicController extends Controller
             $id=$item->id;
          }
          
-        $data=db::table('tours')
+         if($categoria=='tours')
+         {
+            $data=db::table('tours')
+              ->select('tours.nombre as nombretour','tours.descripcion as descripciontour','tours.img','tours.slug')
+              ->join('tour_categoria','tour_categoria.tour_id','=','tours.id')
+              ->join('tipo_categoria_tours','tipo_categoria_tours.id','=','tour_categoria.categoria_id')
+              ->paginate(10);
+
+         }else
+         {
+          $data=db::table('tours')
               ->select('tours.nombre as nombretour','tours.descripcion as descripciontour','tours.img','tours.slug')
               ->join('tour_categoria','tour_categoria.tour_id','=','tours.id')
               ->join('tipo_categoria_tours','tipo_categoria_tours.id','=','tour_categoria.categoria_id')
               ->where('tipo_categoria_tours.id','=',$id) 
-              ->paginate(3);
+              ->paginate(10);
+         }
+        
        
        
         if($request->ajax()) 
@@ -151,7 +165,7 @@ class PublicController extends Controller
                 return response()->json(view("public.es.tour.categoria.categoria",compact('data'))->render());     
           }
       
-      return view('assets.pagina.es.tours',['data'=>$data,'categoria'=>$categoria]);
+      return view('assets.pagina.es.tours',['data'=>$data,'categoria'=>$categoria,'nameCategoria'=>$nameCategoria]);
    }
 
 
@@ -189,7 +203,8 @@ class PublicController extends Controller
 
     public function toursCategoria($es='',$categoria='')
     {
-        $idCategoria=DB::table('tipo_categoria_tours')
+      
+      $idCategoria=DB::table('tipo_categoria_tours')
                           ->select('id')
                           ->where('nombre','=',$categoria)
                           ->get();
