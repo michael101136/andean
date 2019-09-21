@@ -162,19 +162,19 @@
                                     <a href="#"><img src="{{$item->img}}" class="img-responsive" alt=""></a>
                                     <div class="mask">
                                         <h2 style="font-size: 15px;">{{$item->nombretour}}</h2>
-                                  
-                                        <!-- <a href="#" class="thm-btn">Read More</a> -->
+                                 <!--  <button type="button" class="thm-btn">Ver más</button> -->
+                                        <a href="#" class="thm-btn">Ver más</a>
                                     </div>
                                     <div class="dest-name">
                                         <h5></h5>
                                         <h4 style="text-decoration: underline;text-transform: uppercase;">{{$item->categoriatour}}</h4>
                                     </div>
-                                    <div class="dest-icon">
+                                    <!-- <div class="dest-icon">
                                         <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
                                         <i class="flaticon-ship" data-toggle="tooltip" data-placement="top" title="9 Criuses"></i>
                                         <i class="flaticon-transport" data-toggle="tooltip" data-placement="top" title="31 Flights"></i>
                                         <i class="flaticon-front" data-toggle="tooltip" data-placement="top" title="83 Hotels"></i>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         @endforeach
