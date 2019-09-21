@@ -31,7 +31,22 @@ Route::resource('paises', 'paisesController');
 Route::resource('testimonios', 'TestimonioController');
 Route::resource('tipoCategoriaTours', 'TipoCategoriaTourController');
 Route::get('/home', 'HomeController@index');
+Route:: POST('/images-save', 
+[
+	'uses' => 'BlogController@storeImagen',
+	'as' => 'blog.save'
+]);
+Route:: POST('/saveContenidoBlog', 
+[
+	'uses' => 'BlogController@saveContenidoBlog',
+	'as' => 'blog.contenido'
+]);
 
+Route:: POST('/saveCambioImagenBlog', 
+[
+	'uses' => 'BlogController@saveCambioImagenBlog',
+	'as' => 'blog.cambioImagen'
+]);
 //__________________Fin admin_________________________________________________________________*/
 //__________________Inicio Español_________________________________________________________________*/
 
@@ -45,6 +60,7 @@ Route::get('{es}/paquete/{categoria?}',['uses'=>'PublicController@tours'])->name
 Route::get('{es}/tourlist/{categoria?}',['uses'=>'PublicController@toursList'])->name('tourlist');
 Route::get('{es?}/blog',['uses'=>'PublicController@blog'])->name('blogEs');
 Route::get('{es?}/nosotros',['uses'=>'PublicController@about'])->name('aboutEs');
+Route::get('{es?}/detalle/{url}',['uses'=>'PublicController@blog_detail'])->name('detalBlogEs');
 //__________________Fin Español_________________________________________________________________*/
 
 
@@ -148,23 +164,9 @@ Route::get('{es?}/nosotros',['uses'=>'PublicController@about'])->name('aboutEs')
 // Route::post('/images-delete', 'BlogController@destroyImagen');
 // Route::get('/images-show', 'BlogController@indexImagen');
 
-// Route:: POST('/images-save', 
-// [
-// 	'uses' => 'BlogController@storeImagen',
-// 	'as' => 'blog.save'
-// ]);
 
-// Route:: POST('/saveContenidoBlog', 
-// [
-// 	'uses' => 'BlogController@saveContenidoBlog',
-// 	'as' => 'blog.contenido'
-// ]);
 
-// Route:: POST('/saveCambioImagenBlog', 
-// [
-// 	'uses' => 'BlogController@saveCambioImagenBlog',
-// 	'as' => 'blog.cambioImagen'
-// ]);
+
 
 // Route::get('/contacto', 'PublicController@contacto');
 

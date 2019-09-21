@@ -24,21 +24,7 @@
 
 </style>
 
-<!-- 
-            <section class="header header-bg-10" style="margin-top: -200px;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="header-content">
-                                <div class="header-content-inner" style="margin-top: 100px;">
-                                    <h1>BLOG</h1>
-                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
+
 
             <br/><br/><br/><br/> <br/><br/>     
 
@@ -48,46 +34,12 @@
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
-            <div>
-                <img data-u="image" src="/plantilla/sliderblog/img/045.jpg" />
-                <div u="thumb">Slide Description 001</div>
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/sliderblog/img/043.jpg" />
-                <div u="thumb">Slide Description 002</div>
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/sliderblog/img/046.jpg" />
-                <div u="thumb">Slide Description 003</div>
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/sliderblog/img/047.jpg" />
-                <div u="thumb">Slide Description 004</div>
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/sliderblog/img/048.jpg" />
-                <div u="thumb">Slide Description 005</div>
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/sliderblog/img/044.jpg" />
-                <div u="thumb">Slide Description 006</div>
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/sliderblog/img/050.jpg" />
-                <div u="thumb">Slide Description 007</div>
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/sliderblog/img/049.jpg" />
-                <div u="thumb">Slide Description 008</div>
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/sliderblog/img/052.jpg" />
-                <div u="thumb">Slide Description 009</div>
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/sliderblog/img/051.jpg" />
-                <div u="thumb">Slide Description 010</div>
-            </div>
+           @foreach($blogs as $data)
+                <div>
+                    <img data-u="image" src="{{$data->urlimagen}}" />
+                    <div u="thumb">{{$data->titulo}}</div>
+                </div>
+            @endforeach 
         </div>
         <!-- Thumbnail Navigator -->
         <div u="thumbnavigator" style="position:absolute;bottom:0px;left:0px;width:980px;height:50px;color:#FFF;overflow:hidden;cursor:default;background-color:rgba(0,0,0,.5);">
@@ -129,60 +81,27 @@
                             <div class="col-sm-12 col-md-12">
                                 <div class="hotel-list-content">
                                    
+                                @foreach($blogs as $data)
                                     <div class="hotel-item">
                                         <!-- hotel Image-->
                                         <div class="hotel-image">
                                             <a href="#">
-                                                <div class="img"><img src="https://cadenaser00.epimg.net/programa/imagenes/2017/01/16/ser_consumidor/1484562969_320446_1484564164_noticia_normal.jpg"  alt="" class="img-responsive"></div>
+                                                <div class="img"><img src="{{$data->urlimagen}}"  alt="" class="img-responsive"></div>
                                             </a>
                                         </div>
                                         <!-- hotel body-->
                                         <div class="hotel-body">
                                            
-                                            <!-- title-->
-                                            <h3>Tours in Greece</h3>
-                                            <!-- Text Intro-->
-                                            <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
+                                        
+                                            <h3><a href="{{route('detalBlogEs',['idioma'=> 'es','url'=>$data->url])}}">{{$data->titulo}}</a></h3>
+                                           
+                                            <p style="text-align: justify;">{{$data->descripcioncorta}}</p>
                                            
                                         </div>
                                         
                                     </div>
-                                    <div class="hotel-item">
-                                        <!-- hotel Image-->
-                                        <div class="hotel-image">
-                                            <a href="#">
-                                                <div class="img"><img src="https://cadenaser00.epimg.net/programa/imagenes/2017/01/16/ser_consumidor/1484562969_320446_1484564164_noticia_normal.jpg"  alt="" class="img-responsive"></div>
-                                            </a>
-                                        </div>
-                                        <!-- hotel body-->
-                                        <div class="hotel-body">
-                                         
-                                            <!-- title-->
-                                            <h3>Park Hyatt Hotel</h3>
-                                            <!-- Text Intro-->
-                                            <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                          
-                                        </div>
-                                       
-                                    </div>
-                                    <div class="hotel-item">
-                                        <!-- hotel Image-->
-                                        <div class="hotel-image">
-                                            <a href="#">
-                                                <div class="img"><img src="https://cadenaser00.epimg.net/programa/imagenes/2017/01/16/ser_consumidor/1484562969_320446_1484564164_noticia_normal.jpg"  alt="" class="img-responsive"></div>
-                                            </a>
-                                        </div>
-                                        <!-- hotel body-->
-                                        <div class="hotel-body">
-                                          
-                                            <!-- title-->
-                                            <h3>Park Hyatt Hotel</h3>
-                                            <!-- Text Intro-->
-                                            <p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
-                                           
-                                        </div>
-                                      
-                                    </div>
+                                    @endforeach
+                        
 
                                 </div>
                                 
@@ -196,11 +115,13 @@
                          
                             <div class="sidber-box tags-widget">
                                 <div class="cats-title">Tags </div>
+
                                 <div class="tags-inner">
-                                    <a class="ui tag">Nature</a>
-                                    <a class="ui tag">Fashion</a>
-                                    
+                                    @foreach($tack as $data)
+                                         <a class="ui tag">{{$data->nombre}}</a>
+                                    @endforeach
                                 </div>
+
                             </div>
                             <!-- help center -->
                             <div class="sidber-box help-widget">

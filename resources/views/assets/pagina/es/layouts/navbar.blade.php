@@ -31,7 +31,7 @@
                             <li><a href="{{route('aboutEs',['es'=>'es'])}}">Amazon</a></li>
                             <li><a href="{{route('aboutEs',['es'=>'es'])}}">Nosotros</a></li>
                             <li><a href="{{route('blogEs',['es'=>'es'])}}">Blog</a></li>
-                            <li><a href="{{route('contactEs',['es'=>'es'])}}">Contacto</a></li>
+                            <li><a href="{{route('contactEs',['es'=>'es'])}}">Blog</a></li>
 
                         </ul>
 

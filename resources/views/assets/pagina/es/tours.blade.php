@@ -223,17 +223,8 @@
                                                     Only <span><sub>$</sub>785</span>
                                                 </div> -->
                                                 <div class="grid-text">
-                                                    <div class="place-name">{{ $item->nombretour}}</div>
-                                                    <div class="travel-times">
-                                                        <h4 class="pull-left">3 days 2 nights </h4>
-                                                        <!-- <span class="pull-right">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                        </span> -->
-                                                    </div>
+                                                    <div class="place-name" style="padding: 10px;text-shadow: 10px;">{{ $item->nombretour}}</div>
+                                                   
                                                 </div>
                                             </div>
                                         </div>

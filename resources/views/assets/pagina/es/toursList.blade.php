@@ -94,10 +94,6 @@
                                      <a class="thm-btn" href="{{route('detalletourEs',['es'=>'es','tour' => $item->slug])}}">Details</a>
                                     </div>
 
-                                   <!--  <div class="hotel-right"> 
-                                        <div class="hotel-person">from <span class="color-blue">$273</span> person</div>
-                                        <a class="thm-btn" href="#">Details</a>
-                                    </div> -->
                                 </div>
                           </div>                        
                             </div>

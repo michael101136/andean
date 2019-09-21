@@ -25,8 +25,8 @@
             <h3>Get start your next awesome project</h3>
         </hgroup>
         <button class="btn btn-hero btn-lg" role="button" style="
-        cursor: pointer">See all features</button>
-                <!-- <div style="background: rgba(26, 62, 142, 0.7);  margin-left:-1200px; margin-top:80px;">HOLA</div> -->
+        cursor: pointer">Más</button>
+                
       </div>
     </div>
     <div class="item slides">
@@ -52,15 +52,16 @@
             <h3>Get start your next awesome project</h3>
         </hgroup>
         <button class="btn btn-hero btn-lg" role="button" style="
-        cursor: pointer">See all features</button>
+        cursor: pointer">Más</button>
       </div>
     </div>
+    <a href="{{route('aboutEs',['es'=>'es'])}}">
     <div style="color: white;
             background-color: rgba(0,0,0,.5);
             border-bottom-right-radius: 20px;
-            padding: 30px; height: 100px; font-family: 'Oswald',  sans-serif; margin-top:-170px;position: absolute;">CUSCO AVENTURERO 7 DÍAS Y 6 NOCHES BY CAR
-        </div>
-
+            padding: 30px; height: 100px; font-family: 'Oswald',  sans-serif; margin-top:-170px;position: absolute;font-size: 15px;">¿Por qué viajar con nosotros?<br>Somos operadores oficiales del Camino Inca a Machu Picchu bajo <br>las pautas del gobierno peruano
+    </div>
+</a>
   </div> 
 </div>
 
@@ -70,8 +71,7 @@
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
                             <div class="title">
-                                <h2>Popular Treck </h2>
-                                <p>Checkout our Latest Blogs and News</p>
+                                <h2>POPULAR TRECK </h2>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
 
                                     <div class="grid-content">
                                         <div class="grid-price text-right">
-                                            Name <span><!-- <sub>$</sub>991 --></span>
+                                            {{$item->nombretour}} <span><!-- <sub>$</sub>991 --></span>
                                         </div>
                                         <div class="grid-text">
                                           
@@ -122,49 +122,24 @@
  <section class="counter-inner">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-3">
-                            <div class="count-content">
-                                <div class="count-icon">
-                                    <i class="flaticon-earth-globe"></i>
-                                </div>
-                                <div class="count">
-                                    <h1 class="count-number">348</h1>
-                                    <div class="count-text">Destinations</div>
-                                </div>
+                        <div class="col-sm-6">
+                            <div class="count-content" style="background: rgba(0,0,0,0.8);">
+                                <h1>¿Por qué viajar con nosotros?</h1>
+                                    <div class="col-sm-6">
+                                        <ul class="content-list">
+                                            <li>Hemos crecido, como una empresa de viajes especializada desde su formación en 1985.</li>
+                                            <li>Somos una compañía de viajes de propiedad local con sede en Cusco, Perú.</li>
+                                            <li>Nuestro experimentado personal de oficina y guías altamente capacitados ofrecen un servicio personalizado sin igual.</li>
+                                        </ul>
+                                    </div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="count-content">
-                                <div class="count-icon">
-                                    <i class="flaticon-cabin"></i>
+                      
+                        
+                        <div class="col-sm-6">
+                            <div class="embed-responsive embed-responsive-16by9" style="z-index: 1000;">
+                                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9ZIkEH689cI" allowfullscreen></iframe>
                                 </div>
-                                <div class="count">
-                                    <h1 class="count-number">89</h1>
-                                    <div class="count-text">Hotels</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="count-content">
-                                <div class="count-icon">
-                                    <i class="flaticon-photographer-with-cap-and-glasses"></i>
-                                </div>
-                                <div class="count">
-                                    <h1 class="count-number">987</h1>
-                                    <div class="count-text">Tourists</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="count-content">
-                                <div class="count-icon">
-                                    <i class="flaticon-airplane-flight-in-circle-around-earth"></i>
-                                </div>
-                                <div class="count">
-                                    <h1 class="count-number">891</h1>
-                                    <div class="count-text">Tour</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -176,8 +151,7 @@
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
                             <div class="title">
-                                <h2>Popular tours</h2>
-                                <p>This is Amazing Travel Agency !</p>
+                                <h2>POPULAR TOURS</h2>
                             </div>
                         </div>
                     </div>
@@ -187,13 +161,13 @@
                                 <div class="destination-grid">
                                     <a href="#"><img src="{{$item->img}}" class="img-responsive" alt=""></a>
                                     <div class="mask">
-                                        <h2>London</h2>
-                                        <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                                        <h2 style="font-size: 15px;">{{$item->nombretour}}</h2>
+                                  
                                         <!-- <a href="#" class="thm-btn">Read More</a> -->
                                     </div>
                                     <div class="dest-name">
-                                        <h5>Hop on Hop off Bus Tour</h5>
-                                        <h4>London</h4>
+                                        <h5></h5>
+                                        <h4 style="text-decoration: underline;text-transform: uppercase;">{{$item->categoriatour}}</h4>
                                     </div>
                                     <div class="dest-icon">
                                         <i class="flaticon-earth-globe" data-toggle="tooltip" data-placement="top" title="15 Tours"></i>
@@ -224,105 +198,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="testimonials">
-
-
-                            <div class="carousel" data-ride="carousel" id="quote-carousel">
-                                <div class="carousel-inner">
-                                    <!-- Quote 1 -->  
-
-
-                                    <div class="item col-sm-10 col-sm-offset-1">
-                                        <blockquote>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                            aliquam architecto beatae dolorem, enim error eveniet harum iste molestias
-                                            neque nisi placeat possimus quaerat quam repudiandae sint soluta unde vero.
-                                            <span class="author">- Andrew Adams, Google Inc</span>
-                                        </blockquote>
-                                    </div>
-                                    <!-- Quote 2 -->  
-                                    <div class="item col-sm-10 col-sm-offset-1">
-                                        <blockquote>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                            aliquam architecto beatae doloremaliquam architecto beatae dolorem, enim error
-                                            eveniet harum iste molestias neque nisi placeat.
-                                            <span class="author">- Jhon Smith, Facebook Inc</span>
-                                        </blockquote>
-                                    </div>
-                                    <!-- Quote 3 -->
-                                    <div class="item col-sm-10 col-sm-offset-1 active">
-                                        <blockquote>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                            aliquam architecto beatae dolorem, enim error eveniet harum iste molestias
-                                            neque nisi placeat possimus quaerat quam repudiandae sint.
-                                            <span class="author">- Bob Smith, Fitbit</span>
-                                        </blockquote>
-                                    </div>
-                                </div>
-                                <!-- Bottom Carousel Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#quote-carousel" data-slide-to="0" class=""><img class="img-responsive " src="/plantilla/assets/images/avtar-1.jpg" alt=""></li>
-                                    <li data-target="#quote-carousel" data-slide-to="1" class=""><img class="img-responsive" src="/plantilla/assets/images/avtar-2.jpg" alt=""></li>
-                                    <li data-target="#quote-carousel" data-slide-to="2" class="active"><img class="img-responsive" src="/plantilla/assets/images/avtar-3.jpg" alt=""></li>
-                                </ol>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
 <br/><br/><br/>
-
-              <!-- Counter -->
-       <!--      <section class="counter-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="count-content">
-                                <div class="count-icon">
-                                    <i class="flaticon-earth-globe"></i>
-                                </div>
-                                <div class="count">
-                                    <h1 class="count-number">348</h1>
-                                    <div class="count-text">Destinations</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="count-content">
-                                <div class="count-icon">
-                                    <i class="flaticon-cabin"></i>
-                                </div>
-                                <div class="count">
-                                    <h1 class="count-number">89</h1>
-                                    <div class="count-text">Hotels</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="count-content">
-                                <div class="count-icon">
-                                    <i class="flaticon-photographer-with-cap-and-glasses"></i>
-                                </div>
-                                <div class="count">
-                                    <h1 class="count-number">987</h1>
-                                    <div class="count-text">Tourists</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="count-content">
-                                <div class="count-icon">
-                                    <i class="flaticon-airplane-flight-in-circle-around-earth"></i>
-                                </div>
-                                <div class="count">
-                                    <h1 class="count-number">891</h1>
-                                    <div class="count-text">Tour</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
 
            
             <section class="package">
@@ -382,36 +262,29 @@
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
                             <div class="title">
-                                <h2>Blog</h2>
-                                <p>Most Popular Tours in the World</p>
+                                <h2>BLOG</h2>
                             </div>
                         </div>
                     </div>
                     <div class="row thm-margin">
                         <div id="popular-slide" class="owl-carousel">
-                             @foreach($dataTreck as $item)
+                             @foreach($blogs as $data)
                             <div class="item">
                                 <div class="grid-item-inner">
-                                    <div class="grid-img-thumb">
+                                    <div class="grid-img-thumb" style="width: 400px;">
                                         <!-- ribbon -->
-                                        <div class="ribbon"><span>Popular</span></div>
-                                        <a href="#"><img src="{{$item->img}}" alt="1" class="img-responsive" /></a>
+                                   
+                                        <a href="{{route('detalBlogEs',['idioma'=> 'es','url'=>$data->url])}}"><img src="{{$data->urlimagen}}" alt="1" class="img-responsive" /></a>
                                     </div>
                                     <div class="grid-content">
                                         <div class="grid-price text-right">
-                                            Only <span><sub>$</sub>789</span>
+                                         
                                         </div>
                                         <div class="grid-text">
-                                            <div class="place-name">Historic Buildings</div>
+                                          
                                             <div class="travel-times">
-                                                <h4 class="pull-left">3 days 2 nights </h4>
-                                                <span class="pull-right">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </span>
+                                                <h4 class="pull-left" style="text-transform: uppercase;">{{$data->titulo}} </h4>
+                                               
                                             </div>
                                         </div>
                                     </div>

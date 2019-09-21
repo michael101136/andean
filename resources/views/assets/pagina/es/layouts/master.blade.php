@@ -25,20 +25,22 @@
                    
                     <div class="col-sm-4 col-md-3">
                         <div class="footer-box address-inner">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                been the.  </p>
+                             <h4 class="footer-title" style="color: white;">CONTÁCTENOS</h4>
                             <div class="address">
                                 <i class="flaticon-placeholder"></i>
-                                <p>PO Box 16122 Collins Street<br>
-                                    West Victoria 8007 Australia</p>
+                                <p>Urb. Lucrepata E-13, Cusco, Perú</p>
                             </div>
                             <div class="address">
                                 <i class="flaticon-customer-service"></i>
-                                <p> +880153625892</p>
+                                <p> +51 (84) 229-911</p>
+                            </div>
+                            <div class="address">
+                                <i class="flaticon-customer-service"></i>
+                                <p> + 51-984-948-057</p>
                             </div>
                             <div class="address">
                                 <i class="flaticon-mail"></i>
-                                <p> admin@gmail.com</p>
+                                <p> sales@andeanadventuresperu.com</p>
                             </div>
                         </div>
                     </div>
@@ -46,21 +48,15 @@
                         <div class="row">
                             <div class="col-md-4 col-sm-4">
                                 <div class="footer-box">
-                                    <h4 class="footer-title">Information</h4>
-                                    <ul class="categoty">
-                                        <li><a href="#">Pygmy miles</a></li>
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Online Enquiry</a></li>
-                                        <li><a href="#">Call us</a></li>
-                                        <li><a href="#">Terms and Conditions</a></li>
-                                        <li><a href="#">Privacy & Cookies Policy</a></li>
-                                        <li><a href="#">Become a partner</a></li>
-                                    </ul>
+                                    <h4 class="footer-title">INFORMACIÓN</h4>
+                                    <p style="text-align: justify;">
+                                        tiene su sede en Cusco, en el corazón de cualquier viaje a Perú desde 1985 .
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4">
                                 <div class="footer-box">
-                                    <h4 class="footer-title">Experiences</h4>
+                                    <h4 class="footer-title">EXPERIENCIAS</h4>
                                     <ul class="categoty">
                                         <li><a href="#">Epic journeys</a></li>
                                         <li><a href="#">Hidden tribes</a></li>
@@ -71,49 +67,33 @@
                             </div>
                             <div class="col-md-4 col-sm-4">
                                 <div class="footer-box">
-                                    <h4 class="footer-title">Destinations</h4>
+                                    <h4 class="footer-title">ESTILOS</h4>
                                     <ul class="categoty">
-                                        <li><a href="#">Europe</a></li>
-                                        <li><a href="#">Africa</a></li>
-                                        <li><a href="#">Asia</a></li>
-                                        <li><a href="#">Oceania</a></li>
-                                        <li><a href="#">North America</a></li>
-                                        <li><a href="#">South America</a></li>
+                                        <li><a href="{{route('paquete',['idioma'=> 'es','categoria'=>'inca-rail'])}}">Inca Rail</a></li>
+                                        <li><a href="{{route('paquete',['idioma'=> 'es','categoria'=>'treck-&-bikes'])}}">Treck & Bikes</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 hidden-sm">
-                        <div class="footer-box">
-                            <h4 class="footer-title">Flickr Gallery</h4>
-                            <ul class="gallery-list">
-                                <li> <a href="#"><img src="assets/images/flickr-1.jpg" alt=""></a></li>
-                                <li> <a href="#"><img src="assets/images/flickr-2.jpg" alt=""></a></li>
-                                <li> <a href="#"><img src="assets/images/flickr-3.jpg" alt=""></a></li>
-                                <li> <a href="#"><img src="assets/images/flickr-4.jpg" alt=""></a></li>
-                                <li> <a href="#"><img src="assets/images/flickr-5.jpg" alt=""></a></li>
-                                <li> <a href="#"><img src="assets/images/flickr-6.jpg" alt=""></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="sub-footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-5">
-                            <p>Copyright Â© 2016. All rights reserved</p>
+                            <p>Copyright Â© 2019. Andean Adventures Perú</p>
                         </div>
                         <div class="col-sm-7">
                             <div class="footer-menu">
                                 <ul>
-                                    <li><a href="">Home</a></li>
-                                    <li><a href="">About</a></li>
-                                    <li><a href="">Service</a></li>
-                                    <li><a href="">Blog</a></li>
-                                    <li><a href="">Shop</a></li>
-                                    <li><a href="">Forum</a></li>
+                                    <li><a href="/">Inicio</a></li>
+                                    <li><a href="{{route('paquete',['idioma'=> 'es','categoria'=>'inca-rail'])}}">Inca Rail</a></li>
+                                    <li><a href="{{route('paquete',['idioma'=> 'es','categoria'=>'treck-&-bikes'])}}">Treck & Bikes</a></li>
+                                    <li><a href="{{route('aboutEs',['es'=>'es'])}}">Nosotros</a></li>
+                                    <li><a href="{{route('blogEs',['es'=>'es'])}}">Blog</a></li>
+                                    <li><a href="{{route('contactEs',['es'=>'es'])}}">Blog</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -121,13 +101,7 @@
                 </div>
             </div>
         </footer>
-        <!-- jQuery -->
-        <!-- jquery ui js -->
-        <!-- bootstrap js -->
-        <!-- fraction slider js -->
-
-
-        <!-- range slider -->
+        
         {!!Html::script('plantilla/slider/js/jssor.slider-27.5.0.min.js')!!}
         {!!Html::script('plantilla/assets/js/jquery.min.js')!!}
         {!!Html::script('plantilla/assets/js/jquery-ui.min.js')!!}

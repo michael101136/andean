@@ -20,8 +20,10 @@ class PublicController extends Controller
       if($abbr =='es' || $abbr=='en' )
       {
          $dataTreck = publicTours::toursTreck($abbr,'1'); 
-
-         return view('assets.pagina.'.$abbr.'.inicio',['dataTreck'=>$dataTreck]);
+         $blogs=DB::table('blogs')
+              ->select('*')
+              ->get();
+         return view('assets.pagina.'.$abbr.'.inicio',['dataTreck'=>$dataTreck,'blogs'=>$blogs]);
       }
      
     }
@@ -73,6 +75,7 @@ class PublicController extends Controller
 
    //    return view("public.es.blog.blog",compact('data','categoria','cultura','gastronomia','destinos','noticias'));
    // }
+
 
    public function detalleBlog($url)
    {
@@ -270,10 +273,35 @@ class PublicController extends Controller
 
   public function blog($idioma)
   {
-      return view('assets.pagina.'.$idioma.'.blog');
+    
+
+    $tack=DB::table('tipo_categoria_tours')
+              ->select('nombre')
+              ->get();
+    $blogs=DB::table('blogs')
+              ->select('*')
+              ->get();
+
+    return view('assets.pagina.'.$idioma.'.blog',['tack'=>$tack,'blogs'=>$blogs]);
+  }
+   public function blog_detail($idioma,$url)
+  {
+    
+   
+    $blogs=DB::table('blogs')
+              ->select('*')
+              ->where('blogs.url','=',$url)
+              ->get();
+    $tack=DB::table('tipo_categoria_tours')
+              ->select('nombre')
+              ->get();
+
+    return view('assets.pagina.'.$idioma.'.blog_details',['blogs'=>$blogs,'tack'=>$tack]);
+
   }
   public function about($idioma)
   {
       return view('assets.pagina.'.$idioma.'.about_us');
   }
+
 }

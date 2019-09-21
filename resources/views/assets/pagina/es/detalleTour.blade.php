@@ -58,46 +58,13 @@
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+          
+            @foreach($multimedia as $item)
             <div>
-                <img data-u="image" src="/plantilla/slider/img/031.jpg" />
-                <img data-u="thumb" src="/plantilla/slider/img/031-s190x90.jpg" />
+                <img data-u="image" src="{{$item->img}}" />
+                <img data-u="thumb" src="{{$item->img}}" />
             </div>
-            <div>
-                <img data-u="image" src="/plantilla/slider/img/032.jpg" />
-                <img data-u="thumb" src="/plantilla/slider/img/032-s190x90.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/slider/img/033.jpg" />
-                <img data-u="thumb" src="/plantilla/slider/img/033-s190x90.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/slider/img/034.jpg" />
-                <img data-u="thumb" src="/plantilla/slider/img/034-s190x90.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/slider/img/035.jpg" />
-                <img data-u="thumb" src="/plantilla/slider/img/035-s190x90.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/slider/img/036.jpg" />
-                <img data-u="thumb" src="/plantilla/slider/img/036-s190x90.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/slider/img/037.jpg" />
-                <img data-u="thumb" src="/plantilla/slider/img/037-s190x90.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/slider/img/038.jpg" />
-                <img data-u="thumb" src="/plantilla/slider/img/038-s190x90.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/slider/img/039.jpg" />
-                <img data-u="thumb" src="/plantilla/slider/img/039-s190x90.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="/plantilla/slider/img/040.jpg" />
-                <img data-u="thumb" src="/plantilla/slider/img/040-s190x90.jpg" />
-            </div>
+             @endforeach
         </div>
         <!-- Thumbnail Navigator -->
         <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#263457" data-autocenter="1" data-scale-bottom="0.75">
@@ -154,7 +121,7 @@
                             <div class="col-md-offset-2 col-md-8">
                                 <div class="section-title text-center">
                                     <i class="flaticon-experiment-results"></i>
-                                    <h2>Detalles del tour</h2>
+                                    <h2>DETALLE DEL TOURS</h2>
                                    
                                 </div>
                             </div>
@@ -383,19 +350,20 @@
                             <div class="col-md-offset-2 col-md-4">
                                 <div class="section-title text-center">
                                     <i class="flaticon-sidebar"></i>
-                                    <h2>GALLERY</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                    <h2>GALLERIA</h2>
+                                 
                                 </div>
                             </div>
                         </div>
                         <div class="row gallery-margin">
                             <div class="portfolio-items list-unstyled zoom-gallery" id="grid">
                                
-                             
+           
+                     @foreach($multimedia as $item)
                                 <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
                                     <div class="img-thumb">
-                                        <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.jpg">
-                                            <img src="/plantilla/assets/images/gallery-276x525-3.jpg" class="img-responsive" alt="">
+                                        <a href="{{$item->img}}" data-source="assets/images/destination-2.jpg">
+                                            <img src="{{$item->img}}" class="img-responsive" alt="">
                                         </a>
                                         <div class="gallery-hover">
                                             <a class="plus-link dfd-top-right" href="#">
@@ -407,37 +375,8 @@
                                         </div>
                                     </div>
                                 </div>
-            
-                                <div class="col-md-6 col-sm-6 col-xs-12 gallery-padding">
-                                    <div class="img-thumb">
-                                        <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.jpg">
-                                            <img src="/plantilla/assets/images/gallery-560x250-5.jpg" class="img-responsive" alt="">
-                                        </a>
-                                        <div class="gallery-hover">
-                                            <a class="plus-link dfd-top-right" href="#">
-                                                <span class="plus-link-container">
-                                                    <span class="plus-link-out"></span>
-                                                    <span class="plus-link-come"></span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-3 col-xs-12 gallery-padding">
-                                    <div class="img-thumb">
-                                        <a href="assets/images/gallery-1920x1280.jpg" data-source="assets/images/destination-2.jpg">
-                                            <img src="/plantilla/assets/images/gallery-276x255-6.jpg" class="img-responsive" alt="">
-                                        </a>
-                                        <div class="gallery-hover">
-                                            <a class="plus-link dfd-top-right" href="#">
-                                                <span class="plus-link-container">
-                                                    <span class="plus-link-out"></span>
-                                                    <span class="plus-link-come"></span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                       @endforeach
+                            
                               
                                
                                 <!-- sizer -->
